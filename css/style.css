@@ -2,7 +2,17 @@
    General
    ========================================================================== */
 
+body {
+	font-family: "PT Sans", sans-serif;
+	background-color: #f2f2f2;
+	min-width: 760px;
+	max-width: 1280px;
+}
 
+* {
+	margin: 0;
+	padding: 0;
+}
 
 
 
@@ -19,36 +29,18 @@
    Content
    ========================================================================== */
 
-
 .promo {
-	background: url(../img/bg-sedona.jpg) no-repeat;
+	background: url("../img/shape.png") no-repeat 0 450px ,
+				url("../img/bg-sedona.jpg") no-repeat;
 }
 
-.promo__row-second {
-	position: relative;
 
-	width: 176px;
-	padding: 0 40px;
-}
+/* Search section
+   ========================================================================== */
 
-.promo__row-second:before {
-	position: absolute;
-	top: 13px;
-	left: 0;
-	content: "";
-	width: 29px;
-	height: 2px;
-	background-color: #766357;
-}
-
-.promo__row-second:after {
-	position: absolute;
-	top: 13px;
-	right: 0;
-	content: "";
-	width: 29px;
-	height: 2px;
-	background-color: #766357;
+.search__map {
+	background: url("../img/map.jpg") no-repeat;
+	min-height: 470px;
 }
 
 

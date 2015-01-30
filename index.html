@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Sedona</title>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin" >
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
@@ -15,13 +16,15 @@
 			<nav class="main-menu">
 				<ul>
 					<li>
-						<a href="#">Информация</a>
+						<a class="main-menu__link-active" href="#">Информация</a>
 					</li>
 					<li>
 						<a href="#">Фото и видео</a>
 					</li>
 					<li class="main-menu__item-active">
-						<a href="#"><img src="img/logo.jpg" height="70" width="138"></a>
+						<a href="index.html">
+							<img src="img/logo.jpg" height="70" width="138" alt="Лого">
+						</a>
 					</li>
 					<li>
 						<a href="#">Карта штата</a>
@@ -37,24 +40,17 @@
 
 		<main class="content">
 
-			<div class="promo">
-				<div class="promo__row-first">
-					<img src="img/Welcome.png" height="45" width="188" alt="">
+			<section class="promo">
+				<div class="promo__welcome">
+					<img src="img/welcome.png" height="352" width="500" alt="Welcome to the gorgeous Sedona">
 				</div>
-				<div class="promo__row-second">
-					<img src="img/tothegorgeous.png" height="30" width="176" alt="">
+				<div class="promo__title">
+					<h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+					<p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
 				</div>
-				<div class="promo__row-third">
-					<img src="img/sedona.png" height="78" width="458" alt="">
-				</div>
-				<div class="promo__row-fourth">
-					<img src="img/because.png" height="80" width="296" alt="">
-				</div>
-			</div>
+			</section>
 
 			<section class="features">
-				<h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-				<p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
 				<div class="features__content">
 					<div class="features__column-text">
 						<h3>Настоящий городок</h3>
@@ -64,6 +60,8 @@
 					<div class="features__column-photo">
 						<img src="#" alt="">
 					</div>
+				</div>
+				<div class="features__content">
 					<div class="features__column-text">
 						<h3>Жилье</h3>
 						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
@@ -76,6 +74,8 @@
 						<h3>Сувениры</h3>
 						<p>Не только китайского, но и местного производства!</p>
 					</div>
+				</div>
+				<div class="features__content">
 					<div class="features__column-photo">
 						<img src="#" alt="">
 					</div>
@@ -83,8 +83,10 @@
 						<h3>Там есть мост дьявола</h3>
 						<span>№2</span>
 						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-
 					</div>
+				</div>
+				<div class="features__content">
+
 					<div class="features__column-text">
 						<h3>Небольшая площадь</h3>
 						<span>№3</span>
@@ -100,15 +102,40 @@
 						<span>№5</span>
 						<p>Большинство едет в Гранд Каньон и толпится там</p>
 					</div>
-			</div>
+				</div>
+
 			</section>
 
 			<section class="search">
 				<h2 class="search__title">Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<a class="search__btn" href="#">Поиск гостиницы в Седоне</a>
-				<img src="img/map.jpg" height="593" width="100%" alt="Карта">
+				<div class="search__map"></div>
 			</section>
+
+			<form class="form-hotel-search" action="#">
+				<div class="form-hotel-search__row">
+					<label for="form-hotel-search__entrance">Дата заезда:</label>
+					<input id="form-hotel-search__entrance" type="date" name="date" placeholder="24 апреля 2014" tabindex="1" >
+				</div>
+				<div class="form-hotel-search__row">
+					<label for="form-hotel-search__departure">Дата выезда:</label>
+					<input id="form-hotel-search__departure" type="date" name="date" placeholder="4 июля 2014" tabindex="2" >
+				</div>
+				<div class="form-hotel-search__row">
+					<label for="adults">Взрослые:</label>
+					<button value=""></button>
+					<input id="adults" name="quantity" placeholder="2" tabindex="3">
+					<button value=""></button>
+				</div>
+				<div class=""form-hotel-search__row>
+					<label for="children">Дети:</label>
+					<button value=""></button>
+					<input id="adults" name="quantity" placeholder="0" tabindex="4">
+					<button value=""></button>
+				</div>
+				<button type="submit">Найти</button>
+			</form>
 
 		</main>
 
@@ -133,6 +160,8 @@
 			</div>
 
 		</footer>
+
+
 
 
 	</body>
