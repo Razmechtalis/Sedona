@@ -37,8 +37,14 @@ body {
    ========================================================================== */
 
 .promo {
-	background: url("../img/shape.png") no-repeat 0 450px ,
+	background: url("../img/shape.png") no
+	-repeat 0 450px ,
 				url("../img/bg-sedona.jpg") no-repeat;
+}
+
+.promo__welcome {
+	width: 38%; /* 456px */
+	margin: auto;
 }
 
 
