@@ -10,13 +10,16 @@
 body {
 	font-family: "PT Sans", sans-serif;
 	background-color: #f2f2f2;
+	font-size: 14px;
+	text-transform: uppercase;
 
 }
 
 .wrapper {
 	margin: auto;
-	min-width: 760px;
+	min-width: 768px;
 	max-width: 1200px;
+	background-color: #fff;
 }
 
 
@@ -26,26 +29,115 @@ body {
 /* ==========================================================================
    Header
    ========================================================================== */
+.main-menu__list {
+	list-style: none;
 
+	font-size: 0;
+	font-weight: bold;
+}
 
+.main-menu li {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20%;
+	font-size: 14px;
+	text-align: center;
+}
 
-
-
+.main-menu a {
+	display: block;
+	color: #000;
+	text-decoration: none;
+}
 
 /* ==========================================================================
    Content
    ========================================================================== */
 
-.promo {
-	background: url("../img/shape.png") no-repeat 0 450px ,
+.welcome-title {
+
+	background: url("../img/shape.png") no-repeat 0 455px,
 				url("../img/bg-sedona.jpg") no-repeat;
+	padding-top: 75px;
+	min-height: 435px;
+
 }
 
-.promo__welcome {
-	width: 38%; /* 456px */
+.welcome-title img {
+	display: block;
+	margin:  auto;
+}
+
+.introduction {
+	width: 44%; /* 528px+110px(padding)=638px */
 	margin: auto;
+	padding: 75px 55px;
 }
 
+.introduction__title {
+	margin: 0;
+	font-size: 21px;
+	margin-bottom: 32px;
+}
+
+/* Features
+   ========================================================================== */
+
+.features__content {
+	font-size: 0;
+}
+
+.features__column-text,
+.features__column-photo,
+.features__column-explanation {
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: top;
+}
+
+.features__column-text {
+	width: 22%; /* 264px+132px(padding)=396px */
+	height: 256px;
+	padding: 0 5.5%; /* 66px */
+
+	text-align: center;
+	background-color: red;
+}
+
+
+.features__column-photo {
+	width: 67%;
+}
+
+.features__column-explanation {
+	width: 22%; /* 268px+132px(padding)=400px */
+	height: 330px;
+	text-align: center;
+	padding: 0 5.5%; /* 66px */
+	background-color: green;
+}
+
+
+.features__column-text--color {
+	background-color: #81b3d2;
+	color: #fff;
+}
+
+.features h3 {
+	width: 160px;
+	font-size: 21px;
+	margin: auto;
+	margin-top: 45px;
+	margin-bottom: 10px;
+}
+
+.features p {
+	margin-top: 25px;
+}
+
+.features img {
+	width: 100%;
+}
 
 /* Search section
    ========================================================================== */
@@ -54,6 +146,7 @@ body {
 	background: url("../img/map.jpg") no-repeat;
 	min-height: 470px;
 }
+
 
 
 /* ==========================================================================

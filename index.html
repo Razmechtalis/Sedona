@@ -15,7 +15,7 @@
 			<header class="header-page">
 
 				<nav class="main-menu">
-					<ul>
+					<ul class="main-menu__list">
 						<li>
 							<a class="main-menu__link-active" href="#">Информация</a>
 						</li>
@@ -24,7 +24,7 @@
 						</li>
 						<li class="main-menu__item-active">
 							<a href="index.html">
-								<img src="img/logo.jpg" height="70" width="138" alt="Лого">
+								<img src="img/logo.jpg" height="56" width="67" alt="Лого">
 							</a>
 						</li>
 						<li>
@@ -38,56 +38,59 @@
 
 			</header>
 
-			<section class="promo">
-				<div class="promo__welcome">
-					<img src="img/welcome.png" height="352" width="100%" alt="Welcome to the gorgeous Sedona">
-				</div>
-				<div class="promo__title">
-					<h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-					<p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
-				</div>
-			</section>
+			<div class="welcome-title">
+				<img src="img/welcome.png" height="352" width="458" alt="Welcome to the gorgeous Sedona">
+			</div>
+			<div class="introduction">
+				<h1 class="introduction__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+				<p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+			</div>
 
 			<section class="features">
 				<div class="features__content">
-					<div class="features__column-text">
+					<div class="features__column-text  features__column-text--color">
 						<h3>Настоящий городок</h3>
 						<span>№1</span>
-						<p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+						<p>Седона не аттракцион для туристов,
+						 там течет своя жизнь</p>
 					</div>
 					<div class="features__column-photo">
-						<img src="#" alt="">
+						<img src="img/pict-town.jpg" height="256" width="800" alt="Городок">
 					</div>
 				</div>
 				<div class="features__content">
-					<div class="features__column-text">
+					<div class="features__column-explanation">
 						<h3>Жилье</h3>
 						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</div>
-					<div class="features__column-text">
+					<div class="features__column-explanation">
 						<h3>Еда</h3>
-						<p>Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
+						<p>Всегда заказывай фирменный бургер,<br>
+						 вы не разочаруетесь!</p>
 					</div>
-					<div class="features__column-text">
+					<div class="features__column-explanation">
 						<h3>Сувениры</h3>
-						<p>Не только китайского, но и местного производства!</p>
+						<p>Не только китайского,<br>
+						 но и местного производства!</p>
 					</div>
 				</div>
 				<div class="features__content">
 					<div class="features__column-photo">
-						<img src="#" alt="">
+						<img src="img/pict-bridge.jpg" height="256" width="800" alt="Мост дьявола">
 					</div>
-					<div class="features__column-text">
-						<h3>Там есть мост дьявола</h3>
+					<div class="features__column-text  features__column-text--color">
+						<h3>Там есть<br>
+						 мост дьявола</h3>
 						<span>№2</span>
-						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+						<p>Да, по нему можно пройти!<br>
+						 Если конечно вы осмелитесь</p>
 					</div>
 				</div>
 				<div class="features__content">
 					<div class="features__column-text">
 						<h3>Небольшая площадь</h3>
 						<span>№3</span>
-						<p>Все достопримечательности находятся очень близко</p>
+						<p>Все достопримеча-<br>тельности находятся очень близко</p>
 					</div>
 					<div class="features__column-text">
 						<h3>Красивая дорога</h3>
@@ -112,11 +115,11 @@
 			<form class="form-hotel-search" action="#">
 				<div class="form-hotel-search__row">
 					<label for="form-hotel-search__entrance">Дата заезда:</label>
-					<input id="form-hotel-search__entrance" type="date" name="date" placeholder="24 апреля 2014" tabindex="1" >
+					<input id="form-hotel-search__entrance" type="date" name="date" tabindex="1" >
 				</div>
 				<div class="form-hotel-search__row">
 					<label for="form-hotel-search__departure">Дата выезда:</label>
-					<input id="form-hotel-search__departure" type="date" name="date" placeholder="4 июля 2014" tabindex="2" >
+					<input id="form-hotel-search__departure" type="date" name="date" tabindex="2" >
 				</div>
 				<div class="form-hotel-search__row">
 					<label for="adults">Взрослые:</label>
@@ -124,10 +127,10 @@
 					<input id="adults" name="quantity" placeholder="2" tabindex="3">
 					<button value=""></button>
 				</div>
-				<div class=""form-hotel-search__row>
+				<div class="form-hotel-search__row">
 					<label for="children">Дети:</label>
 					<button value=""></button>
-					<input id="adults" name="quantity" placeholder="0" tabindex="4">
+					<input id="children" name="quantity" placeholder="0" tabindex="4">
 					<button value=""></button>
 				</div>
 				<button type="submit">Найти</button>
