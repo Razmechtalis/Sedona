@@ -34,6 +34,7 @@ body {
 
 	font-size: 0;
 	font-weight: bold;
+	text-align: center;
 }
 
 .main-menu li {
@@ -41,7 +42,7 @@ body {
 	vertical-align: middle;
 	width: 20%;
 	font-size: 14px;
-	text-align: center;
+
 }
 
 .main-menu a {
@@ -85,6 +86,7 @@ body {
 
 .features__content {
 	font-size: 0;
+	text-align: center;
 }
 
 .features__column-text,
