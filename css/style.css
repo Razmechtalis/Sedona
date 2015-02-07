@@ -15,7 +15,7 @@
 	 General
 	 ========================================================================== */
 
-body {
+.page {
 	background-color: #f2f2f2;
 
 	font-family: "PT Sans", sans-serif;
@@ -100,15 +100,14 @@ body {
 /* Features
 	 ========================================================================== */
 
-.features__content {
+.features-row  {
 	font-size: 0;
 
 	text-align: center;
 }
 
-.features__column-text,
-.features__column-photo,
-.features__column-explanation {
+.features-row__text,
+.features-row__photo {
 	display: inline-block;
 
 	font-size: 14px;
@@ -116,33 +115,28 @@ body {
 	vertical-align: top;
 }
 
-.features__column-text {
+.features-row__text {
 	width: 22%; /* 264px+132px(padding)=396px */
 	height: 256px;
 	padding: 0 5.5%; /* 66px */
 
-	background-color: red;
-
 	text-align: center;
 }
 
 
-.features__column-photo {
+.features-row__photo {
 	width: 67%;
 }
 
-.features__column-explanation {
+.features-row--pict .features-row__text  {
 	width: 22%; /* 268px+132px(padding)=400px */
 	height: 330px;
 	padding: 0 5.5%; /* 66px */
 
-	background-color: green;
-
-	text-align: center;
 }
 
 
-.features__column-text--color {
+.features-row__text--color {
 	color: #fff;
 	background-color: #81b3d2;
 }
