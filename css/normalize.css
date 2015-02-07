@@ -107,7 +107,7 @@ font-style: italic;
 */
 h1 {
 font-size: 2em;
-margin: 0.67em 0;
+margin: 0;
 }
 /**
 * Address styling not present in IE 8/9.
@@ -158,7 +158,7 @@ overflow: hidden;
 * Address margin not present in IE 8/9 and Safari.
 */
 figure {
-margin: 1em 40px;
+margin: 0;
 }
 /**
 * Address differences between Firefox and other browsers.
@@ -266,7 +266,7 @@ line-height: normal;
 */
 input[type="checkbox"],
 input[type="radio"] {
-/*box-sizing: border-box;*/ /* 1 */
+box-sizing: border-box; /* 1 */
 padding: 0; /* 2 */
 }
 /**
@@ -303,8 +303,8 @@ input[type="search"]::-webkit-search-decoration {
 */
 fieldset {
 border: 1px solid #c0c0c0;
-margin: 0 2px;
-padding: 0.35em 0.625em 0.75em;
+margin: 0;
+padding: 0;
 }
 /**
 * 1. Correct `color` not being inherited in IE 8/9/10/11.

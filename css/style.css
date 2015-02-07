@@ -1,11 +1,19 @@
+
+/*----------------------------*\
+  =name - страница
+\*----------------------------*/
+
+/* ==========================
+   $name - раздел
+   ========================== */
+
+/* ^name - подраздел
+   ========================== */
+
+
 /* ==========================================================================
    General
    ========================================================================== */
-
-* {
-	margin: 0;
-	padding: 0;
-}
 
 body {
 	font-family: "PT Sans", sans-serif;
@@ -57,8 +65,9 @@ body {
 
 .welcome-title {
 
-	background: url("../img/shape.png") no-repeat 0 455px,
+	background: url("../img/shape.png") no-repeat bottom,
 				url("../img/bg-sedona.jpg") no-repeat;
+	background-size: 100% 57px cover;
 	padding-top: 75px;
 	min-height: 435px;
 
