@@ -1,81 +1,87 @@
 
 /*----------------------------*\
-  =name - страница
+	=name - страница
 \*----------------------------*/
 
 /* ==========================
-   $name - раздел
-   ========================== */
+	 $name - раздел
+	 ========================== */
 
 /* ^name - подраздел
-   ========================== */
+	 ========================== */
 
 
 /* ==========================================================================
-   General
-   ========================================================================== */
+	 General
+	 ========================================================================== */
 
 body {
-	font-family: "PT Sans", sans-serif;
 	background-color: #f2f2f2;
-	font-size: 14px;
-	text-transform: uppercase;
 
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
+
+	text-transform: uppercase;
 }
 
 .wrapper {
-	margin: auto;
 	min-width: 768px;
 	max-width: 1200px;
+	margin: auto;
+
 	background-color: #fff;
 }
 
 
 
 
-
 /* ==========================================================================
-   Header
-   ========================================================================== */
+	 Header
+	 ========================================================================== */
 .main-menu__list {
-	list-style: none;
-
 	font-size: 0;
 	font-weight: bold;
+
+	list-style: none;
+
 	text-align: center;
 }
 
 .main-menu li {
 	display: inline-block;
-	vertical-align: middle;
+
 	width: 20%;
+
 	font-size: 14px;
 
+	vertical-align: middle;
 }
 
 .main-menu a {
 	display: block;
+
 	color: #000;
+
 	text-decoration: none;
 }
 
 /* ==========================================================================
-   Content
-   ========================================================================== */
+	 Content
+	 ========================================================================== */
 
 .welcome-title {
+	min-height: 435px;
+	padding-top: 75px;
 
 	background: url("../img/shape.png") no-repeat bottom,
-				url("../img/bg-sedona.jpg") no-repeat;
+	url("../img/bg-sedona.jpg") no-repeat;
 	background-size: 100% 57px cover;
-	padding-top: 75px;
-	min-height: 435px;
-
 }
 
 .welcome-title img {
 	display: block;
-	margin:  auto;
+
+	margin: auto;
 }
 
 .introduction {
@@ -86,15 +92,17 @@ body {
 
 .introduction__title {
 	margin: 0;
-	font-size: 21px;
 	margin-bottom: 32px;
+
+	font-size: 21px;
 }
 
 /* Features
-   ========================================================================== */
+	 ========================================================================== */
 
 .features__content {
 	font-size: 0;
+
 	text-align: center;
 }
 
@@ -102,7 +110,9 @@ body {
 .features__column-photo,
 .features__column-explanation {
 	display: inline-block;
+
 	font-size: 14px;
+
 	vertical-align: top;
 }
 
@@ -111,8 +121,9 @@ body {
 	height: 256px;
 	padding: 0 5.5%; /* 66px */
 
-	text-align: center;
 	background-color: red;
+
+	text-align: center;
 }
 
 
@@ -123,23 +134,26 @@ body {
 .features__column-explanation {
 	width: 22%; /* 268px+132px(padding)=400px */
 	height: 330px;
-	text-align: center;
 	padding: 0 5.5%; /* 66px */
+
 	background-color: green;
+
+	text-align: center;
 }
 
 
 .features__column-text--color {
-	background-color: #81b3d2;
 	color: #fff;
+	background-color: #81b3d2;
 }
 
 .features h3 {
 	width: 160px;
-	font-size: 21px;
 	margin: auto;
 	margin-top: 45px;
 	margin-bottom: 10px;
+
+	font-size: 21px;
 }
 
 .features p {
@@ -147,27 +161,26 @@ body {
 }
 
 .features img {
+	display: block;
+
 	width: 100%;
 }
 
 /* Search section
-   ========================================================================== */
+	 ========================================================================== */
 
 .search__map {
-	background: url("../img/map.jpg") no-repeat;
 	min-height: 470px;
+
+	background: url("../img/map.jpg") no-repeat;
 }
 
 
 
 /* ==========================================================================
-   Footer
-   ========================================================================== */
+	 Footer
+	 ========================================================================== */
 
 
 /* Блок комментариев для подраздела
-   ========================================================================== */
-
-
-
-
+	 ========================================================================== */
