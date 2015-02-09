@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Sedona-hotels</title>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin" >
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css"></head>
+
+	<body class="page">
+
+		<div class="wrapper">
+			<header class="header-page">
+				<figure class="logo  header-page__logo">
+					<a href="index.html">
+						<img src="img/logo.jpg" height="56" width="67" alt="Лого"></a>
+				</figure>
+				<nav class="main-menu">
+					<ul class="main-menu__list">
+						<li>
+							<a class="main-menu__link-active" href="#">Информация</a>
+						</li>
+						<li>
+							<a href="#">Фото и видео</a>
+						</li>
+						<li></li>
+						<li>
+							<a href="#">Карта штата</a>
+						</li>
+						<li>
+							<a href="#">Гостиницы</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<div class="hotels-filter">
+
+				<form class="form-choise" action="#">
+					<fieldset class="form-choise__first-column">
+						<legend>Инфраструктура:</legend>
+						<div class="checkbox">
+							<label class="checkbox__label" for="pool">Бассейн</label>
+							<input id="pool" type="checkbox" name="infrastructure" value="" checked></div>
+						<div class="checkbox">
+							<label class="checkbox__label" for="parking">Парковка</label>
+							<input id="parking" type="checkbox" name="infrastructure" value=""></div>
+						<div class="checkbox">
+							<label class="checkbox__label" for="wifi">Wi-Fi</label>
+							<input id="wifi" type="checkbox" name="infrastructure" value=""></div>
+					</fieldset>
+					<fieldset class="form-choise__second-column">
+						<legend>Тип жилья:</legend>
+						<div class="checkbox">
+							<label class="checkbox__label" for="hotel">Гостиница</label>
+							<input id="hotel" type="checkbox" name="housing" value="" checked></div>
+						<div class="checkbox">
+							<label class="checkbox__label" for="motel">Мотель</label>
+							<input id="motel" type="checkbox" name="housing" value="" checked></div>
+						<div class="checkbox">
+							<label class="checkbox__label" for="apartments">Апартаменты</label>
+							<input id="apartments" type="checkbox" name="housing" value="" checked></div>
+					</fieldset>
+					<fieldset class="form-choise__third-column">
+						<legend>Стоимость в сутки (Р):</legend>
+						<div class="range-filter">
+							<div class="range-filter__quantity">
+								<input id="min" name="price" value="От 0">
+								<input id="max" name="price" value="До 3000"></div>
+							<div class="filter-control  range-filter__filter-control">
+								<div class="filter-control__scale">
+									<div class="filter-control__bar"></div>
+									<div class="filter-control__handle  range-filter__handle-min"></div>
+									<div class="filter-control__handle  range-filter__handle-max"></div>
+								</div>
+							</div>
+						</div>
+						<a class="form-choise__btn" href="#"></a>
+					</fieldset>
+
+				</form>
+
+			</div>
+
+			<section class="filter">
+				<h2 class="filter__title">Найдено:</h2>
+				<span class="filter__text">Сортировка:</span>
+				<ul class="filter__menu">
+					<li class="filter__item  filter__item--active">
+						<a class="filter__link" href="#">По цене</a>
+					</li>
+					<li class="filter__item">
+						<a class="filter__link" href="#">По типу</a>
+					</li>
+					<li class="filter__item">
+						<a class="filter__link" href="#">По рейтингу</a>
+					</li>
+				</ul>
+				<button class="filter__turn-off"></button>
+				<button class="filter__turn-on"></button>
+			</section>
+
+			<div class="result-request">
+				<div class="result-request__row">
+					<div class="result-request__img">
+						<img src="#" alt=""></div>
+					<div class="result-request__description">
+						<h2 class="result-request__name"></h2>
+						<span class="result-request__text">Гостиница</span>
+						<span class="result-request__text">От 3500 р.</span>
+						<a class="btn" href="#">Подробнее</a>
+						<a class="btn" href="#">Забронировать</a>
+						<div class="rating  result-request__rating">
+							<ul>
+								<li class="rating__item"></li>
+								<li class="rating__item"></li>
+								<li class="rating__item"></li>
+								<li class="rating__item"></li>
+							</ul>
+							<div class="rating__mark">Рейтинг: 8,5</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="result-request__row">
+					<div class="result-request__img">
+						<img src="" alt=""></div>
+					<div class="result-request__description">
+						<h2 class="result-request__name"></h2>
+						<span class="result-request__text">Мотель</span>
+						<span class="result-request__text">От 2000 р.</span>
+						<a class="btn" href="#">Подробнее</a>
+						<a class="btn" href="#">Забронировать</a>
+						<div class="rating  result-request__rating">
+							<ul>
+								<li class="rating__item"></li>
+								<li class="rating__item"></li>
+							</ul>
+							<div class="rating__mark">Рейтинг: 8,9</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="result-request__row">
+					<div class="result-request__img">
+						<img src="" alt=""></div>
+					<div class="result-request__description">
+						<h2 class="result-request__name"></h2>
+						<span class="result-request__text">Апартаменты</span>
+						<span class="result-request__text">От 4000 р.</span>
+						<a class="btn" href="#">Подробнее</a>
+						<a class="btn" href="#" >Забронировать</a>
+						<div class="rating  result-request__rating">
+							<ul>
+								<li class="rating__item"></li>
+								<li class="rating__item"></li>
+								<li class="rating__item"></li>
+							</ul>
+							<div class="rating__mark">Рейтинг: 9,2</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<footer class="footer-page">
+
+				<div class="footer-page__left-column">
+					<a class="footer-page__hashtag" href="#">#Visitsedona</a>
+				</div>
+
+				<div class="share  footer-page__center-column">
+					<a class="share__icon  share__icon--tw" href="#"></a>
+					<a class="share__icon  share__icon--fb" href="#"></a>
+					<a class="share__icon  share__icon--youtube" href="#"></a>
+				</div>
+
+				<div class="copyright  footer-page__right-column">
+					<span class="copyright__text">Website by</span>
+					<a class="copyright__icon  copyright__icon--by" href="#"></a>
+					<span class="copyright__text">for</span>
+					<a class="copyright__icon copyright__icon--for" href="#"></a>
+				</div>
+
+			</footer>
+
+		</div>
+
+	</body>
+
+</html>
