@@ -4,9 +4,7 @@
 */
 
 /**
-* Общие правила
-*
-* $section common
+* $section
 */
 
 /**
@@ -14,15 +12,16 @@
 */
 
 
-/* ==========================================================================
-	 General
-	 ========================================================================== */
+/**
+* $Common
+*/
 
 .page {
 	background-color: #f2f2f2;
 
 	font-family: "PT Sans", sans-serif;
 	font-size: 14px;
+	color: #000;
 
 	text-transform: uppercase;
 }
@@ -33,17 +32,38 @@
 	margin: auto;
 
 	background-color: #fff;
+	outline: 2px solid red;
 }
-/* ==========================================================================
-	 Header
-	 ========================================================================== */
+
+
+/**
+* $Header
+*/
+
+.header-page {
+	margin-bottom: 80px;
+	outline: 2px solid green;
+}
+
+
+.logo {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -2.8%; /* (1200*2,8%)=34px */
+	outline: 2px solid red;
+
+}
+
+
 .main-menu__list {
 	font-size: 0;
 	font-weight: bold;
+	padding: 0;
 
 	list-style: none;
 
-	text-align: center;
+	outline: 2px solid blue;
 }
 
 .main-menu li {
@@ -52,29 +72,36 @@
 	width: 20%;
 
 	font-size: 14px;
+	line-height: 26px;
 
-	vertical-align: middle;
+	vertical-align: top;
 }
-
 .main-menu a {
 	display: block;
+	padding: 6.2% 29%; /* 15px 70px (от 240px) */
 
 	color: #000;
 
 	text-decoration: none;
 }
 
-/* ==========================================================================
-	 Content
-	 ========================================================================== */
+
+/**
+* @index-page
+*/
+
+/**
+* $Welcome-title
+*/
 
 .welcome-title {
 	min-height: 435px;
-	padding-top: 75px;
+	margin-bottom: 60px;
 
 	background: url("../img/shape.png") no-repeat bottom,
 	url("../img/bg-sedona.jpg") no-repeat;
 	background-size: 100% 57px cover;
+	outline: 2px solid blue;
 }
 
 .welcome-title img {
@@ -83,26 +110,36 @@
 	margin: auto;
 }
 
+/**
+* $Introduction
+*/
+
 .introduction {
-	width: 44%; /* 528px+110px(padding)=638px */
+	width: 488px;
 	margin: auto;
-	padding: 75px 55px;
+	margin-bottom: 50px;
+	padding:0 75px;
+	line-height: 26px;
+	outline: 2px solid blue;
+	text-align: center;
 }
 
 .introduction__title {
 	margin: 0;
-	margin-bottom: 32px;
+	margin-bottom: 30px;
 
 	font-size: 21px;
 }
 
-/* Features
-	 ========================================================================== */
+/**
+* $Features
+*/
 
 .features-row  {
 	font-size: 0;
 
-	text-align: center;
+	outline: 2px solid blue;
+	line-height: 21px;
 }
 
 .features-row__text,
@@ -115,42 +152,40 @@
 }
 
 .features-row__text {
-	width: 22%; /* 264px+132px(padding)=396px */
+	width: 23%; /* 276px (от 1200px) */
 	height: 256px;
-	padding: 0 5.5%; /* 66px */
-
+	padding: 0 5%; /* 60px (от 1200px) */
 	text-align: center;
 }
-
-
-.features-row__img {
-	width: 67%;
-}
-
-.features-row--pict .features-row__text  {
-	width: 22%; /* 268px+132px(padding)=400px */
-	height: 330px;
-	padding: 0 5.5%; /* 66px */
-
-}
-
 
 .features-row__text--color {
 	color: #fff;
 	background-color: #81b3d2;
 }
 
-.features h3 {
+.features-row__img {
+	width: 67%;
+}
+
+.features-row--pict .features-row__text  {
+	position: relative;
+	width: 22%; /* 268px+132px(padding)=400px */
+	height: 330px;
+	padding: 0 5.5%; /* 66px */
+}
+
+.features-row h3 {
 	width: 160px;
 	margin: auto;
-	margin-top: 45px;
-	margin-bottom: 10px;
+	margin-top: 18%; /* 50px ( от 276px) */
+	margin-bottom: 12px;
 
 	font-size: 21px;
+	line-height: 26px;
 }
 
 .features p {
-	margin-top: 25px;
+	margin-top: 24px;
 }
 
 .features img {
@@ -159,21 +194,39 @@
 	width: 100%;
 }
 
-/* Search section
-	 ========================================================================== */
+/**
+* ^Icon
+*/
+.icon:before {
+	position: absolute;
+	top: 63px;
+	left: 50%;
 
-.search__map {
-	min-height: 470px;
 
-	background: url("../img/map.jpg") no-repeat;
+	background: transparent url("../img/sprite.png") no-repeat 0 0;
 }
 
+.icon--house:before {
+	content: "";
 
+	width: 75px;
+	height: 72px;
+	margin-left: -37px;
+	background: transparent url("../img/sprite.png") no-repeat -4px 0;
+}
 
-/* ==========================================================================
-	 Footer
-	 ========================================================================== */
+.icon--hamburger:before {
+	content: "";
+	width: 74px;
+	height: 70px;
+	margin-left: -37px;
+	background: transparent url("../img/sprite.png") no-repeat -4px -188px;
+}
 
-
-/* Блок комментариев для подраздела
-	 ========================================================================== */
+.icon--souvenir:before {
+	content: "";
+	width: 64px;
+	height: 76px;
+	margin-left: -32px;
+	background: transparent url("../img/sprite.png") no-repeat -16px -92px;
+}
