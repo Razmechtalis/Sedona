@@ -99,7 +99,7 @@
 	margin-bottom: 60px;
 
 	background: url("../img/shape.png") no-repeat bottom,
-	url("../img/bg-sedona.jpg") no-repeat;
+              url("../img/bg-sedona.jpg") no-repeat;
 	background-size: 100% 57px cover;
 	outline: 2px solid blue;
 }
@@ -115,7 +115,7 @@
 */
 
 .introduction {
-	width: 488px;
+	width: 490px; /* 488+150px(paddings)=640px */
 	margin: auto;
 	margin-bottom: 50px;
 	padding:0 75px;
@@ -125,7 +125,6 @@
 }
 
 .introduction__title {
-	margin: 0;
 	margin-bottom: 30px;
 
 	font-size: 21px;
@@ -136,6 +135,7 @@
 */
 
 .features-row  {
+	margin-bottom: 55px;
 	font-size: 0;
 
 	outline: 2px solid blue;
@@ -156,6 +156,7 @@
 	height: 256px;
 	padding: 0 5%; /* 60px (от 1200px) */
 	text-align: center;
+	outline: 2px solid green;
 }
 
 .features-row__text--color {
@@ -169,23 +170,34 @@
 
 .features-row--pict .features-row__text  {
 	position: relative;
-	width: 22%; /* 268px+132px(padding)=400px */
+	width: 22.3%; /* 268px+132px(padding)=400px */
 	height: 330px;
 	padding: 0 5.5%; /* 66px */
+}
+
+.features-row--color .features-row__text {
+	width: 22.3%;
+	padding: 0 5.5%;
+	background-color: #eee;
 }
 
 .features-row h3 {
 	width: 160px;
 	margin: auto;
 	margin-top: 18%; /* 50px ( от 276px) */
-	margin-bottom: 12px;
+	margin-bottom: 11px;
 
 	font-size: 21px;
+	font-weight: bold;
 	line-height: 26px;
 }
 
+.features-row--pict h3 {
+	margin-top: 160px;
+}
+
 .features p {
-	margin-top: 24px;
+	margin-top: 20px;
 }
 
 .features img {
@@ -229,4 +241,116 @@
 	height: 76px;
 	margin-left: -32px;
 	background: transparent url("../img/sprite.png") no-repeat -16px -92px;
+}
+
+/**
+* $Search
+*/
+
+.search {
+	width: 568px; /* 568px+150px(paddings)=640px */
+	margin: auto;
+	padding:0 35px;
+	outline: 2px solid blue;
+	text-align: center;
+}
+
+.search__title {
+	margin: 0;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+.search p {
+	line-height: 24px;
+	margin-top: 30px;
+	margin-bottom: 47px;
+}
+
+.search__btn {
+	display: block;
+	width: 568px;
+	padding: 30px 0;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 26px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #766357;
+
+}
+
+/**
+* $Map
+*/
+
+.map {
+	background-color: #fff;
+	background: url("../img/map.jpg") no-repeat;
+	min-height: 593px;
+	width: 100%;
+	outline: 2px solid purple;
+	padding-top: .1px;
+}
+
+
+/**
+* ^Form
+*/
+.form-search {
+	display: none;
+
+}
+
+/**
+* $Footer
+*/
+
+.footer-page {
+	margin-top: 475px;
+	padding: 37px 0;
+	background: url("../img/bg-footer.png") repeat;
+	font-size: 0;
+}
+
+.footer-page__column {
+	display: inline-block;
+
+	width: 33.3%;
+	outline: 2px solid blue;
+	font-size: 14px;
+	line-height: 26px;
+	vertical-align: top;
+	text-align: center;
+}
+
+.footer-page__hashtag {
+	color: #000;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+/**
+* ^Share
+*/
+
+.share {
+	font-size: 0;
+}
+.share__icon {
+	display: inline-block;
+	vertical-align: top;
+	width: 48px;
+	height: 48px;
+	background-color: #81b3d2;
+	color: #fff;
+	font-size: 20px;
+	margin-right: 7px;
+	text-align: center;
+}
+
+
+.copyright__text {
+	line-height: 26px;
 }
