@@ -41,7 +41,6 @@
 */
 
 .header-page {
-	margin-bottom: 80px;
 	outline: 2px solid green;
 }
 
@@ -76,6 +75,7 @@
 
 	vertical-align: top;
 }
+
 .main-menu a {
 	display: block;
 	padding: 6.2% 29%; /* 15px 70px (от 240px) */
@@ -96,11 +96,12 @@
 
 .welcome-title {
 	min-height: 435px;
+	padding-top: 80px;
 	margin-bottom: 60px;
 
 	background: url("../img/shape.png") no-repeat bottom,
               url("../img/bg-sedona.jpg") no-repeat;
-	background-size: 100% 57px cover;
+	background-size: 100% 57px, cover;
 	outline: 2px solid blue;
 }
 
@@ -285,20 +286,34 @@
 */
 
 .map {
-	background-color: #fff;
+	position: relative;
+	outline: 2px solid red;
+	padding-top: 473px;
+	}
+
+.map__container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: -10;
 	background: url("../img/map.jpg") no-repeat;
 	min-height: 593px;
-	width: 100%;
 	outline: 2px solid purple;
-	padding-top: .1px;
 }
-
 
 /**
 * ^Form
 */
 .form-search {
-	display: none;
+	/*display: none;*/
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 570px;
+	margin-left: -285px;
+	outline: 2px solid red;
 
 }
 
@@ -307,10 +322,10 @@
 */
 
 .footer-page {
-	margin-top: 475px;
 	padding: 37px 0;
-	background: url("../img/bg-footer.png") repeat;
+	background-color: rgba(255,255,255, .9);
 	font-size: 0;
+	outline: 2px solid green;
 }
 
 .footer-page__column {
@@ -350,7 +365,143 @@
 	text-align: center;
 }
 
-
+/**
+* ^Copyright
+*/
 .copyright__text {
 	line-height: 26px;
+}
+
+/**
+* @Hotels-page
+*/
+
+/* Общая ширина 1050px */
+
+.hotels-filter {
+	padding: 30px 0;
+	padding-left: 5.9%; /* 71px (от 1200px) */
+	padding-right: 6.9%; /* 83px (от 1200px) */
+	background: transparent url("../img/bg-sedona--inner.jpg") no-repeat;
+	background-size: 100%, cover;
+	outline: 2px solid green;
+	line-height: 21px;
+}
+
+/**
+* ^Form-choise
+*/
+
+.form-choise {
+	font-size: 0;
+	outline: 2px solid blue;
+}
+
+.form-choise legend {
+	font-size: 16px;
+}
+
+.form-choise__left-column,
+.form-choise__center-column,
+.form-choise__right-column {
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: top;
+	border: none;
+	outline: 2px solid green;
+}
+
+.form-choise__left-column,
+.form-choise__right-column {
+	width: 32%; /* от ширины form-choise */
+}
+
+.form-choise__center-column {
+	width: 36%; /* от ширины form-choise */
+}
+
+/**
+* ^Filter
+*/
+
+/* Общая ширина 1050px */
+
+.filter {
+	padding: 28px 0;
+	padding-left: 5.9%; /* 71px (от 1200px) */
+	padding-right: 6.9%; /* 83px (от 1200px)*/
+	font-size: 0;
+}
+
+.filter__title,
+.filter__text,
+.filter__menu,
+.filter__switch {
+	display: inline-block;
+	vertical-align: bottom;
+
+	outline: 2px solid red;
+}
+
+.filter__title {
+	margin: 0;
+	font-size: 21px;
+	line-height: 26px;
+	width: 13.5%; /* 142px (от 1050px - ширина родителя) */
+	padding-right: 25px;
+}
+
+.filter__text {
+	width: 9.5238%; /* 100px ( от 1050px) */
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.filter__menu {
+	width: 61.42857%; /* 645px (от 1050px) */
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	padding: 0 15px;
+}
+
+.filter__item {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 12px;
+	line-height: 18px;
+	margin-right: 32px;
+}
+
+.filter__link {
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+.filter__link--active {
+	color: #81b3d2;
+}
+
+.filter__switch {
+	width: 10.28571%; /* 108px ( от 1050px) */
+	font-size: 23px;
+	line-height: 23px;
+
+}
+
+/**
+* ^Result-request
+*/
+
+/* Общая ширина 1050px */
+
+.result-request {
+	padding-top: 28px;
+	padding-bottom: 30px;
+	padding-left: 5.9%; /* 71px (от 1200px) */
+	padding-right: 6.9%; /* 83px (от 1200px)*/
+	outline: 2px solid green;
+
 }

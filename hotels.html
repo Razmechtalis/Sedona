@@ -37,7 +37,7 @@
 			<div class="hotels-filter">
 
 				<form class="form-choise" action="#">
-					<fieldset class="form-choise__first-column">
+					<fieldset class="form-choise__left-column">
 						<legend>Инфраструктура:</legend>
 						<div class="checkbox">
 							<label class="checkbox__label" for="pool">Бассейн</label>
@@ -49,7 +49,7 @@
 							<label class="checkbox__label" for="wifi">Wi-Fi</label>
 							<input id="wifi" type="checkbox" name="infrastructure" value=""></div>
 					</fieldset>
-					<fieldset class="form-choise__second-column">
+					<fieldset class="form-choise__center-column">
 						<legend>Тип жилья:</legend>
 						<div class="checkbox">
 							<label class="checkbox__label" for="hotel">Гостиница</label>
@@ -61,7 +61,7 @@
 							<label class="checkbox__label" for="apartments">Апартаменты</label>
 							<input id="apartments" type="checkbox" name="housing" value="" checked></div>
 					</fieldset>
-					<fieldset class="form-choise__third-column">
+					<fieldset class="form-choise__right-column">
 						<legend>Стоимость в сутки (Р):</legend>
 						<div class="range-filter">
 							<div class="range-filter__quantity">
@@ -83,11 +83,11 @@
 			</div>
 
 			<section class="filter">
-				<h2 class="filter__title">Найдено:</h2>
+				<h2 class="filter__title">Найдено: 3</h2>
 				<span class="filter__text">Сортировка:</span>
 				<ul class="filter__menu">
-					<li class="filter__item  filter__item--active">
-						<a class="filter__link" href="#">По цене</a>
+					<li class="filter__item">
+						<a class="filter__link  filter__link--active" href="#">По цене</a>
 					</li>
 					<li class="filter__item">
 						<a class="filter__link" href="#">По типу</a>
@@ -96,31 +96,35 @@
 						<a class="filter__link" href="#">По рейтингу</a>
 					</li>
 				</ul>
-				<button class="filter__turn-off"></button>
-				<button class="filter__turn-on"></button>
+				<div class="switch filter__switch">
+					<button class="switch__turn-off">1</button>
+					<button class="switch__turn-on">2</button>
+				</div>
+
 			</section>
 
 			<div class="result-request">
 				<div class="result-request__row">
 					<div class="result-request__img">
-						<img src="#" alt=""></div>
+						<img src="#" alt="">
+					</div>
 					<div class="result-request__description">
 						<h2 class="result-request__name"></h2>
 						<span class="result-request__text">Гостиница</span>
 						<span class="result-request__text">От 3500 р.</span>
 						<a class="btn" href="#">Подробнее</a>
 						<a class="btn" href="#">Забронировать</a>
-						<div class="rating  result-request__rating">
-							<ul>
-								<li class="rating__item"></li>
-								<li class="rating__item"></li>
-								<li class="rating__item"></li>
-								<li class="rating__item"></li>
-							</ul>
-							<div class="rating__mark">Рейтинг: 8,5</div>
-						</div>
-
 					</div>
+					<div class="rating  result-request__rating">
+						<ul>
+							<li class="rating__item"></li>
+							<li class="rating__item"></li>
+							<li class="rating__item"></li>
+							<li class="rating__item"></li>
+						</ul>
+						<div class="rating__mark">Рейтинг: 8,5</div>
+					</div>
+
 				</div>
 				<div class="result-request__row">
 					<div class="result-request__img">
@@ -131,15 +135,15 @@
 						<span class="result-request__text">От 2000 р.</span>
 						<a class="btn" href="#">Подробнее</a>
 						<a class="btn" href="#">Забронировать</a>
-						<div class="rating  result-request__rating">
-							<ul>
-								<li class="rating__item"></li>
-								<li class="rating__item"></li>
-							</ul>
-							<div class="rating__mark">Рейтинг: 8,9</div>
-						</div>
-
 					</div>
+					<div class="rating  result-request__rating">
+						<ul>
+							<li class="rating__item"></li>
+							<li class="rating__item"></li>
+						</ul>
+						<div class="rating__mark">Рейтинг: 8,9</div>
+					</div>
+
 				</div>
 				<div class="result-request__row">
 					<div class="result-request__img">
@@ -150,16 +154,17 @@
 						<span class="result-request__text">От 4000 р.</span>
 						<a class="btn" href="#">Подробнее</a>
 						<a class="btn" href="#" >Забронировать</a>
-						<div class="rating  result-request__rating">
-							<ul>
-								<li class="rating__item"></li>
-								<li class="rating__item"></li>
-								<li class="rating__item"></li>
-							</ul>
-							<div class="rating__mark">Рейтинг: 9,2</div>
-						</div>
-
 					</div>
+					<div class="rating  result-request__rating">
+						<ul>
+							<li class="rating__item"></li>
+							<li class="rating__item"></li>
+							<li class="rating__item"></li>
+						</ul>
+						<div class="rating__mark">Рейтинг: 9,2</div>
+					</div>
+
+
 				</div>
 			</div>
 
