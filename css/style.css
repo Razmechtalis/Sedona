@@ -13,7 +13,7 @@
 
 
 /**
-* $Common
+* @Common
 */
 
 .page {
@@ -35,9 +35,15 @@
 	outline: 2px solid red;
 }
 
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+
+}
 
 /**
-* $Header
+* @Header
 */
 
 .header-page {
@@ -87,11 +93,11 @@
 
 
 /**
-* @index-page
+* $index-page
 */
 
 /**
-* $Welcome-title
+* @Welcome-title
 */
 
 .welcome-title {
@@ -112,7 +118,7 @@
 }
 
 /**
-* $Introduction
+* @Introduction
 */
 
 .introduction {
@@ -132,7 +138,7 @@
 }
 
 /**
-* $Features
+* @Features
 */
 
 .features-row  {
@@ -245,7 +251,7 @@
 }
 
 /**
-* $Search
+* @Search
 */
 
 .search {
@@ -282,7 +288,7 @@
 }
 
 /**
-* $Map
+* @Map
 */
 
 .map {
@@ -318,7 +324,7 @@
 }
 
 /**
-* $Footer
+* @Footer
 */
 
 .footer-page {
@@ -330,8 +336,8 @@
 
 .footer-page__column {
 	display: inline-block;
-
 	width: 33.3%;
+
 	outline: 2px solid blue;
 	font-size: 14px;
 	line-height: 26px;
@@ -368,20 +374,20 @@
 /**
 * ^Copyright
 */
+
 .copyright__text {
 	line-height: 26px;
 }
 
 /**
-* @Hotels-page
+* $Hotels-page
 */
 
-/* Общая ширина 1050px */
 
 .hotels-filter {
 	padding: 30px 0;
-	padding-left: 5.9%; /* 71px (от 1200px) */
-	padding-right: 6.9%; /* 83px (от 1200px) */
+	padding-left: 5.833333333333%; /* 70px (от 1200px) */
+	padding-right: 6.666666666667%; /* 80px (от 1200px) */
 	background: transparent url("../img/bg-sedona--inner.jpg") no-repeat;
 	background-size: 100%, cover;
 	outline: 2px solid green;
@@ -392,9 +398,12 @@
 * ^Form-choise
 */
 
+/* Общая ширина 1050px */
+
 .form-choise {
 	font-size: 0;
 	outline: 2px solid blue;
+	color: #fff;
 }
 
 .form-choise legend {
@@ -408,7 +417,6 @@
 	font-size: 14px;
 	vertical-align: top;
 	border: none;
-	outline: 2px solid green;
 }
 
 .form-choise__left-column,
@@ -421,87 +429,174 @@
 }
 
 /**
-* ^Filter
+* @Filter
 */
 
-/* Общая ширина 1050px */
+/* Ширина контента 1050px */
 
 .filter {
-	padding: 28px 0;
-	padding-left: 5.9%; /* 71px (от 1200px) */
-	padding-right: 6.9%; /* 83px (от 1200px)*/
-	font-size: 0;
+	padding: 29px 0;
+	padding-left: 5.833333333333%; /* 70px (от 1200px) */
+	padding-right: 6.666666666667%; /* 80px (от 1200px)*/
+	outline: 2px solid blue;
 }
 
-.filter__title,
-.filter__text,
-.filter__menu,
-.filter__switch {
-	display: inline-block;
-	vertical-align: bottom;
 
-	outline: 2px solid red;
-}
 
 .filter__title {
+	float: left;
+	width: 143px;
 	margin: 0;
 	font-size: 21px;
 	line-height: 26px;
-	width: 13.5%; /* 142px (от 1050px - ширина родителя) */
-	padding-right: 25px;
+	outline: 2px solid blue;
+	margin-right: 20px;
 }
 
-.filter__text {
-	width: 9.5238%; /* 100px ( от 1050px) */
-	font-size: 12px;
-	line-height: 18px;
-}
-
-.filter__menu {
-	width: 61.42857%; /* 645px (от 1050px) */
-	list-style: none;
-	margin: 0;
+.filter-nav {
+	float: left;
 	padding: 0;
+
+	width: 59.33333333333%;  /* 623px (от 1050px)  */
+	list-style: none;
 	font-size: 0;
-	padding: 0 15px;
+	outline: 2px solid blue;
+
 }
 
-.filter__item {
+
+.filter-nav__item {
 	display: inline-block;
+	padding-top: 6px;
 	vertical-align: top;
 	font-size: 12px;
 	line-height: 18px;
 	margin-right: 32px;
+
 }
 
-.filter__link {
+.filter-nav__item--title {
+	margin-right: 40px;
+}
+
+.filter-nav__link {
 	display: block;
 	text-decoration: none;
 	color: #000;
 }
 
-.filter__link--active {
+.filter-nav__link--active {
 	color: #81b3d2;
 }
 
 .filter__switch {
-	width: 10.28571%; /* 108px ( от 1050px) */
+	float: right;
+	width: 110px;
 	font-size: 23px;
 	line-height: 23px;
-
+	text-align: right;
+	outline: 2px solid blue;
 }
 
 /**
-* ^Result-request
+* @Result-request
 */
 
-/* Общая ширина 1050px */
+/* Ширина контента 1050px */
 
 .result-request {
 	padding-top: 28px;
 	padding-bottom: 30px;
-	padding-left: 5.9%; /* 71px (от 1200px) */
-	padding-right: 6.9%; /* 83px (от 1200px)*/
+	padding-left: 5.833333333333%; /* 70px (от 1200px) */
+	padding-right: 6.666666666667%; /* 80px (от 1200px)*/
+	outline: 2px solid red;
+	line-height: 21px;
+}
+
+
+.result-request__img {
+	float: left;
+	width: 135px;
+	margin-right: 32px;
+	outline: 2px solid green;
+}
+
+
+.result-request__description {
+	float: left;
+
+	width: 56.99404761905%; /* 599px (от 1050px) */
 	outline: 2px solid green;
 
+}
+
+
+.result-request__name {
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.result-request__text {
+	margin-bottom: 10px;
+}
+.result-request__text span {
+	margin-right: 35px;
+	color: #333;
+}
+
+.result-request__buttons {
+	font-size: 0;
+}
+
+
+
+
+.btn {
+	display: inline-block;
+	width: 78px;
+	padding: 3px 16px 3px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 21px;
+	background-color: #81b3d2;
+}
+
+.btn--brown {
+	width: 110px;
+	background-color: #766357;
+}
+
+.result-request__buttons .btn {
+	margin-right: 6px;
+}
+
+/**
+* ^Rating
+*/
+
+.rating ul {
+	list-style: none;
+	margin: 0;
+	background-color: red;
+}
+
+.result-request__rating {
+	float: right;
+
+	width: 122px;
+	text-align: right;
+	outline: 2px solid green;
+
+}
+
+.rating__mark {
+	width: 110px;
+	padding: 3px 0;
+	margin-left: auto;
+	color: #666;
+	background-color: #f2f2f2;
 }

@@ -82,20 +82,22 @@
 
 			</div>
 
-			<section class="filter">
+			<section class="filter  clearfix">
+
 				<h2 class="filter__title">Найдено: 3</h2>
-				<span class="filter__text">Сортировка:</span>
-				<ul class="filter__menu">
-					<li class="filter__item">
-						<a class="filter__link  filter__link--active" href="#">По цене</a>
+				<ul class="filter-nav">
+					<li class="filter-nav__item  filter-nav__item--title">Сортировка:</li>
+					<li class="filter-nav__item">
+						<a class="filter-nav__link  filter-nav__link--active" href="#">По цене</a>
 					</li>
-					<li class="filter__item">
-						<a class="filter__link" href="#">По типу</a>
+					<li class="filter-nav__item">
+						<a class="filter-nav__link" href="#">По типу</a>
 					</li>
-					<li class="filter__item">
-						<a class="filter__link" href="#">По рейтингу</a>
+					<li class="filter-nav__item">
+						<a class="filter-nav__link" href="#">По рейтингу</a>
 					</li>
 				</ul>
+
 				<div class="switch filter__switch">
 					<button class="switch__turn-off">1</button>
 					<button class="switch__turn-on">2</button>
@@ -104,16 +106,21 @@
 			</section>
 
 			<div class="result-request">
-				<div class="result-request__row">
+				<div class="result-request__row  clearfix">
 					<div class="result-request__img">
-						<img src="#" alt="">
+						<img src="img/pict-hotel.jpg" height="90" width="135" alt="Гостиница">
 					</div>
+
 					<div class="result-request__description">
-						<h2 class="result-request__name"></h2>
-						<span class="result-request__text">Гостиница</span>
-						<span class="result-request__text">От 3500 р.</span>
-						<a class="btn" href="#">Подробнее</a>
-						<a class="btn" href="#">Забронировать</a>
+						<h2 class="result-request__name">Amara Resort & Spa</h2>
+						<div class="result-request__text">
+							<span>Гостиница</span>
+							<span>От 3500 р.</span>
+						</div>
+						<div class="result-request__buttons">
+							<a class="btn" href="#">Подробнее</a>
+							<a class="btn  btn--brown" href="#">Забронировать</a>
+					</div>
 					</div>
 					<div class="rating  result-request__rating">
 						<ul>
@@ -124,18 +131,23 @@
 						</ul>
 						<div class="rating__mark">Рейтинг: 8,5</div>
 					</div>
-
 				</div>
-				<div class="result-request__row">
+
+				<div class="result-request__row  clearfix">
 					<div class="result-request__img">
-						<img src="" alt=""></div>
+						<img src="img/pict-motel.jpg" height="90" width="135" alt="Мотель"></div>
 					<div class="result-request__description">
-						<h2 class="result-request__name"></h2>
-						<span class="result-request__text">Мотель</span>
-						<span class="result-request__text">От 2000 р.</span>
-						<a class="btn" href="#">Подробнее</a>
-						<a class="btn" href="#">Забронировать</a>
+						<h2 class="result-request__name">Desert Quail Inn</h2>
+						<div class="result-request__text">
+							<span>Мотель</span>
+							<span>От 2000 р.</span>
+						</div>
+						<div class="result-request__buttons">
+							<a class="btn" href="#">Подробнее</a>
+							<a class="btn  btn--brown" href="#">Забронировать</a>
+						</div>
 					</div>
+
 					<div class="rating  result-request__rating">
 						<ul>
 							<li class="rating__item"></li>
@@ -143,18 +155,23 @@
 						</ul>
 						<div class="rating__mark">Рейтинг: 8,9</div>
 					</div>
-
 				</div>
-				<div class="result-request__row">
+
+				<div class="result-request__row  clearfix">
 					<div class="result-request__img">
-						<img src="" alt=""></div>
+						<img src="img/pict-apartments.jpg" height="90" width="135" alt="Апартаменты"></div>
 					<div class="result-request__description">
-						<h2 class="result-request__name"></h2>
-						<span class="result-request__text">Апартаменты</span>
-						<span class="result-request__text">От 4000 р.</span>
-						<a class="btn" href="#">Подробнее</a>
-						<a class="btn" href="#" >Забронировать</a>
+						<h2 class="result-request__name">Villas at Poco Diablo</h2>
+						<div class="result-request__text">
+							<span>Апартаменты</span>
+							<span>От 4000 р.</span>
+						</div>
+						<div class="result-request__buttons">
+							<a class="btn" href="#">Подробнее</a>
+							<a class="btn  btn--brown" href="#">Забронировать</a>
+						</div>
 					</div>
+
 					<div class="rating  result-request__rating">
 						<ul>
 							<li class="rating__item"></li>
@@ -170,17 +187,17 @@
 
 			<footer class="footer-page">
 
-				<div class="footer-page__left-column">
+				<div class="footer-page__column">
 					<a class="footer-page__hashtag" href="#">#Visitsedona</a>
 				</div>
 
-				<div class="share  footer-page__center-column">
+				<div class="share  footer-page__column">
 					<a class="share__icon  share__icon--tw" href="#"></a>
 					<a class="share__icon  share__icon--fb" href="#"></a>
 					<a class="share__icon  share__icon--youtube" href="#"></a>
 				</div>
 
-				<div class="copyright  footer-page__right-column">
+				<div class="copyright  footer-page__column">
 					<span class="copyright__text">Website by</span>
 					<a class="copyright__icon  copyright__icon--by" href="#"></a>
 					<span class="copyright__text">for</span>
