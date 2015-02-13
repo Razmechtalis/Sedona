@@ -3,6 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Sedona-hotels</title>
+		<link rel="stylesheet" href="font/symbols-sedona.css">
+		<link rel="stylesheet" href="font/animation.css">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin" >
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css"></head>
@@ -99,8 +101,8 @@
 				</ul>
 
 				<div class="switch filter__switch">
-					<button class="switch__turn-off">1</button>
-					<button class="switch__turn-on">2</button>
+					<button><i class="icon-font--up-dir"></i></button>
+					<button><i class="icon-font--down-dir"></i></button>
 				</div>
 
 			</section>
@@ -108,8 +110,7 @@
 			<div class="result-request">
 				<div class="result-request__row  clearfix">
 					<div class="result-request__img">
-						<img src="img/pict-hotel.jpg" height="90" width="135" alt="Гостиница">
-					</div>
+						<img src="img/pict-hotel.jpg" height="90" width="135" alt="Гостиница"></div>
 
 					<div class="result-request__description">
 						<h2 class="result-request__name">Amara Resort & Spa</h2>
@@ -119,15 +120,16 @@
 						</div>
 						<div class="result-request__buttons">
 							<a class="btn" href="#">Подробнее</a>
-							<a class="btn  btn--brown" href="#">Забронировать</a>
-					</div>
+							<a class="btn  btn--booking" href="#">Забронировать</a>
+						</div>
 					</div>
 					<div class="rating  result-request__rating">
-						<ul>
-							<li class="rating__item"></li>
-							<li class="rating__item"></li>
-							<li class="rating__item"></li>
-							<li class="rating__item"></li>
+						<ul class="rating-value">
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
 						</ul>
 						<div class="rating__mark">Рейтинг: 8,5</div>
 					</div>
@@ -144,14 +146,14 @@
 						</div>
 						<div class="result-request__buttons">
 							<a class="btn" href="#">Подробнее</a>
-							<a class="btn  btn--brown" href="#">Забронировать</a>
+							<a class="btn  btn--booking" href="#">Забронировать</a>
 						</div>
 					</div>
 
 					<div class="rating  result-request__rating">
-						<ul>
-							<li class="rating__item"></li>
-							<li class="rating__item"></li>
+						<ul class="rating-value">
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
 						</ul>
 						<div class="rating__mark">Рейтинг: 8,9</div>
 					</div>
@@ -168,19 +170,18 @@
 						</div>
 						<div class="result-request__buttons">
 							<a class="btn" href="#">Подробнее</a>
-							<a class="btn  btn--brown" href="#">Забронировать</a>
+							<a class="btn  btn--booking" href="#">Забронировать</a>
 						</div>
 					</div>
 
 					<div class="rating  result-request__rating">
-						<ul>
-							<li class="rating__item"></li>
-							<li class="rating__item"></li>
-							<li class="rating__item"></li>
+						<ul class="rating-value">
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
 						</ul>
 						<div class="rating__mark">Рейтинг: 9,2</div>
 					</div>
-
 
 				</div>
 			</div>
@@ -191,18 +192,24 @@
 					<a class="footer-page__hashtag" href="#">#Visitsedona</a>
 				</div>
 
-				<div class="share  footer-page__column">
-					<a class="share__icon  share__icon--tw" href="#"></a>
-					<a class="share__icon  share__icon--fb" href="#"></a>
-					<a class="share__icon  share__icon--youtube" href="#"></a>
-				</div>
+					<div class="share  footer-page__column">
+						<a class="share__icon" href="#">
+							<i class="icon-font  icon-font--twitter"></i>
+						</a>
+						<a class="share__icon" href="#">
+							<i class="icon-font  icon-font--facebook"></i>
+						</a>
+						<a class="share__icon  share__icon--youtube" href="#">
+							<i class="icon-font  icon-font--youtube"></i>
+						</a>
+					</div>
 
-				<div class="copyright  footer-page__column">
-					<span class="copyright__text">Website by</span>
-					<a class="copyright__icon  copyright__icon--by" href="#"></a>
-					<span class="copyright__text">for</span>
-					<a class="copyright__icon copyright__icon--for" href="#"></a>
-				</div>
+					<div class="copyright  footer-page__column">
+						Website by
+						<a class="copyright__icon  copyright__icon-author" href="#"></a>
+						for
+						<a class="copyright__icon  copyright__icon-academy" href="#"></a>
+					</div>
 
 			</footer>
 

@@ -3,12 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Sedona</title>
+		<link rel="stylesheet" href="font/symbols-sedona.css">
+		<link rel="stylesheet" href="font/animation.css">
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin" >
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css"></head>
 
 	<body class="page">
-
 
 		<div class="wrapper">
 
@@ -16,8 +17,7 @@
 
 				<figure class="logo  header-page__logo">
 					<a href="index.html">
-						<img src="img/logo.jpg" height="56" width="67" alt="Лого">
-						</a>
+						<img src="img/logo.jpg" height="56" width="67" alt="Лого"></a>
 				</figure>
 
 				<nav class="main-menu">
@@ -41,8 +41,7 @@
 			</header>
 
 			<div class="welcome-title">
-				<img src="img/welcome.png" height="352" width="458" alt="Welcome to the gorgeous Sedona">
-			</div>
+				<img src="img/welcome.png" height="352" width="458" alt="Welcome to the gorgeous Sedona"></div>
 			<section class="introduction">
 				<h1 class="introduction__title">
 					Седона - небольшой городок в Аризоне, заслуживающий большего!
@@ -57,45 +56,40 @@
 					<div class="features-row__text  features-row__text--color">
 						<h3>Настоящий городок</h3>
 						<div>№1</div>
-						<p>
-							Седона не аттракцион для туристов, там течет своя жизнь
-						</p>
+						<p>Седона не аттракцион для туристов, там течет своя жизнь</p>
 					</div>
 					<div class="features-row__img">
 						<img src="img/pict-town.jpg" height="256" width="800" alt="Городок"></div>
 				</div>
 				<div class="features-row  features-row--pict">
 					<div class="features-row__text">
-					<div class="icon icon--house"></div>
+						<div class="icon icon--house"></div>
 						<h3>Жилье</h3>
 						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</div>
 					<div class="features-row__text">
-					<div class="icon icon--hamburger"></div>
+						<div class="icon icon--hamburger"></div>
 
 						<h3>Еда</h3>
-						<p>
-							Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
+						<p>Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
 					</div>
 					<div class="features-row__text">
-					<div class="icon icon--souvenir"></div>
+						<div class="icon icon--souvenir"></div>
 						<h3>Сувениры</h3>
 						<p>
-							Не только китайского,<br>
-							но и местного производства!</p>
+							Не только китайского,
+							<br>но и местного производства!</p>
 					</div>
 				</div>
 				<div class="features-row">
 					<div class="features-row__img">
-						<img src="img/pict-bridge.jpg" height="256" width="800" alt="Мост дьявола">
-					</div>
+						<img src="img/pict-bridge.jpg" height="256" width="800" alt="Мост дьявола"></div>
 					<div class="features-row__text  features-row__text--color-blue">
 						<h3>
 							Там есть
 							<br>мост дьявола</h3>
 						<div>№2</div>
-						<p>
-							Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					</div>
 				</div>
 				<div class="features-row  features-row--color">
@@ -103,8 +97,8 @@
 						<h3>Небольшая площадь</h3>
 						<div>№3</div>
 						<p>
-							Все достопримеча-<br>
-							тельности находятся очень близко</p>
+							Все достопримеча-
+							<br>тельности находятся очень близко</p>
 					</div>
 					<div class="features-row__text">
 						<h3>Красивая дорога</h3>
@@ -122,62 +116,64 @@
 			<section class="search">
 				<h2 class="search__title">Заинтересовались?</h2>
 				<p>
-					Укажите предполагаемые даты поездки<br>
-					 и мы покажем вам лучшие предложения гостиниц в Седоне
-				</p>
+					Укажите предполагаемые даты поездки
+					<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<a class="search__btn" href="#">Поиск гостиницы в Седоне</a>
 			</section>
 
 			<div class="map">
 				<div class="map__container"></div>
-					<form class="form-search" action="#">
-						<div class="form-search__row">
-							<label for="entrance">Дата заезда:</label>
-							<input id="entrance" type="date" name="date" tabindex="1" ></div>
-						<div class="form-search__row">
-							<label for="departure">Дата выезда:</label>
-							<input id="departure" type="date" name="date" tabindex="2" ></div>
-						<div class="counter  form-search__counter">
-							<label class="counter__label" for="adults">Взрослые:</label>
-							<button class="counter__less" value=""></button>
-							<input id="adults" name="number" placeholder="2" tabindex="3">
-							<button class="counter__more" value=""></button>
-						</div>
-						<div class="counter  form-search__counter">
-							<label class="counter__label" for="children">Дети:</label>
-							<button value=""></button>
-							<input id="children" name="number" placeholder="0" tabindex="4">
-							<button value=""></button>
-						</div>
-						<button class="form-search__btn" type="submit">Найти</button>
-					</form>
+				<form class="form-search" action="#">
+					<div class="form-search__row">
+						<label for="entrance">Дата заезда:</label>
+						<input id="entrance" type="date" name="date" tabindex="1" ></div>
+					<div class="form-search__row">
+						<label for="departure">Дата выезда:</label>
+						<input id="departure" type="date" name="date" tabindex="2" ></div>
+					<div class="counter  form-search__counter">
+						<label class="counter__label" for="adults">Взрослые:</label>
+						<button class="counter__less" value=""></button>
+						<input id="adults" name="number" placeholder="2" tabindex="3">
+						<button class="counter__more" value=""></button>
+					</div>
+					<div class="counter  form-search__counter">
+						<label class="counter__label" for="children">Дети:</label>
+						<button value=""></button>
+						<input id="children" name="number" placeholder="0" tabindex="4">
+						<button value=""></button>
+					</div>
+					<button class="form-search__btn" type="submit">Найти</button>
+				</form>
 
-			<footer class="footer-page">
+				<footer class="footer-page">
 
-				<div class="footer-page__column">
-					<a class="footer-page__hashtag" href="#">#Visitsedona</a>
-				</div>
+					<div class="footer-page__column">
+						<a class="footer-page__hashtag" href="#">#Visitsedona</a>
+					</div>
 
-				<div class="share  footer-page__column">
-					<a class="share__icon  share__icon--tw" href="#"></a>
-					<a class="share__icon  share__icon--fb" href="#"></a>
-					<a class="share__icon  share__icon--youtube" href="#"></a>
-				</div>
+					<div class="share  footer-page__column">
+						<a class="share__icon" href="#">
+							<i class="icon-font  icon-font--twitter"></i>
+						</a>
+						<a class="share__icon" href="#">
+							<i class="icon-font  icon-font--facebook"></i>
+						</a>
+						<a class="share__icon  share__icon--youtube" href="#">
+							<i class="icon-font  icon-font--youtube"></i>
+						</a>
+					</div>
+					<div class="copyright  footer-page__column">
+						Website by
+						<a class="copyright__icon  copyright__icon-author" href="#"></a>
+						for
+						<a class="copyright__icon  copyright__icon-academy" href="#"></a>
+					</div>
 
-				<div class="copyright  footer-page__column">
-					<span class="copyright__text">Website by</span>
-					<a class="copyright__icon  copyright__icon--by" href="#"></a>
-					<span class="copyright__text">for</span>
-					<a class="copyright__icon copyright__icon--for" href="#"></a>
-				</div>
-
-			</footer>
-
+				</footer>
 
 			</div>
 
 		</div>
-
 
 	</body>
 
