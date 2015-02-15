@@ -123,22 +123,26 @@
 				<div class="map__container"></div>
 				<form class="form-search" action="#">
 					<div class="form-search__row">
-						<label for="entrance">Дата заезда:</label>
-						<input id="entrance" type="date" name="date" tabindex="1" ></div>
+						<label class="form-search__label" for="entrance">Дата заезда:</label>
+						<input id="entrance" type="date" name="date" tabindex="1" placeholder="24 Апреля 2014">
+						<button class="form-search__calendar"><i class="icon-font--calendar"></i></button>
+					</div>
 					<div class="form-search__row">
-						<label for="departure">Дата выезда:</label>
-						<input id="departure" type="date" name="date" tabindex="2" ></div>
+						<label class="form-search__label" for="departure">Дата выезда:</label>
+						<input id="departure" type="date" name="date" tabindex="2" placeholder="4 июля 2014">
+						<button class="form-search__calendar"><i class="icon-font--calendar"></i></button>
+						</div>
 					<div class="counter  form-search__counter">
-						<label class="counter__label" for="adults">Взрослые:</label>
-						<button class="counter__less" value=""></button>
+						<label class="form-search__label" class="counter__label" for="adults">Взрослые:</label>
+						<button class="counter__less" value=""><i class="icon-font--minus"></i></button>
 						<input id="adults" name="number" placeholder="2" tabindex="3">
-						<button class="counter__more" value=""></button>
+						<button class="counter__more" value=""><i class="icon-font--plus"></i></button>
 					</div>
 					<div class="counter  form-search__counter">
-						<label class="counter__label" for="children">Дети:</label>
-						<button value=""></button>
+						<label class="form-search__label" class="counter__label" for="children">Дети:</label>
+						<button class="counter__less" value=""><i class="icon-font--minus"></i></button>
 						<input id="children" name="number" placeholder="0" tabindex="4">
-						<button value=""></button>
+						<button class="counter__more" value=""><i class="icon-font--plus"></i></button>
 					</div>
 					<button class="form-search__btn" type="submit">Найти</button>
 				</form>
