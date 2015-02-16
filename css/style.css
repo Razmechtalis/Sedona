@@ -393,6 +393,7 @@
 	font-size: 14px;
 	border: none;
 	background-color: #f2f2f2;
+	font-family: "PT Sans", sans-serif;
 }
 
 .form-search__calendar {
@@ -404,6 +405,7 @@
 	border: none;
 	background-color: transparent;
 	color: #c2c2c2;
+	font-family: "Symbols-sedona";
 }
 
 
@@ -419,6 +421,7 @@
 	border: none;
 	background-color: #f2f2f2;
 	text-align: center;
+	font-family: "PT Sans", sans-serif;
 }
 
 .counter__less,
@@ -430,6 +433,7 @@
 	color: #a9a9a9;
 	margin-left: -.24em; /* Убрал отступы у инлайн-блоков */
 	margin-right: -.26em; /* Убрал отступы у инлайн-блоков */
+	font-family: "Symbols-sedona";
 }
 
 
@@ -445,6 +449,7 @@
 	line-height: 26px;
 	font-weight: bold;
 	color: #fff;
+	font-family: "PT Sans", sans-serif;
 }
 
 /**
@@ -494,6 +499,7 @@
 	line-height: 20px;
 	margin-right: 7px;
 	text-align: center;
+	font-family: "Symbols-sedona";
 }
 
 .share__icon--youtube {
@@ -536,12 +542,12 @@
 
 
 .hotels-filter {
-	padding: 30px 0;
+	padding-top: 25px;
+	padding-bottom: 30px;
 	padding-left: 5.833333333333%; /* 70px (от 1200px) */
 	padding-right: 6.666666666667%; /* 80px (от 1200px) */
 	background: transparent url("../img/bg-sedona--inner.jpg") no-repeat;
 	background-size: 100%, cover;
-	outline: 2px solid green;
 	line-height: 21px;
 }
 
@@ -553,12 +559,7 @@
 
 .form-choise {
 	font-size: 0;
-	outline: 2px solid blue;
 	color: #fff;
-}
-
-.form-choise legend {
-	font-size: 16px;
 }
 
 .form-choise__left-column,
@@ -570,6 +571,8 @@
 	border: none;
 }
 
+
+
 .form-choise__left-column,
 .form-choise__right-column {
 	width: 32%; /* от ширины form-choise */
@@ -577,6 +580,138 @@
 
 .form-choise__center-column {
 	width: 36%; /* от ширины form-choise */
+}
+
+.form-choise legend {
+	font-size: 16px;
+	margin-bottom: 22px;
+	font-weight: bold;
+	line-height: 21px;
+}
+
+.form-choise__right-column legend {
+	margin-bottom: 10px;
+}
+
+.checkbox {
+	margin-bottom: 20px;
+}
+
+.checkbox:last-of-type {
+	margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="checkbox"] + .checkbox__label {
+	display: inline-block;
+	color: #fff;
+	cursor: pointer;
+	vertical-align: top;
+	font-family: "PT Sans", sans-serif;
+
+}
+
+input[type="checkbox"] + .checkbox__label:before {
+	content: "\2610";
+	display: inline-block;
+	vertical-align: top;
+	font-size: 24px;
+	font-family: "Symbols-sedona";
+	line-height: 24px;
+	margin-right: 19px;
+}
+
+input[type="checkbox"]:checked + .checkbox__label:before {
+	content: "\2611";
+}
+
+.range-filter__price {
+	position: relative;
+	border: 2px solid #fff;
+	font-size: 0;
+	padding-top: 5px;
+	border-radius: 3px;
+}
+
+.range-filter__price:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	top: 5px;
+	margin-left: -1px;
+	background-color: #fff;
+	width: 2px;
+	height: 22px;
+}
+
+
+
+.range-filter__text-field {
+	width: 50%; /* от ширины родителя */
+	border: none;
+	outline: none;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	color: #fff;
+	line-height: 21px;
+	background-color: transparent;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "PT Sans", sans-serif;
+}
+
+.range-control {
+	padding-top: 20px;
+}
+
+.range-control__scale {
+	position: relative;
+	height: 2px;
+	background-color: #71757a;
+}
+
+.range-control__bar {
+	height: 2px;
+	background-color: #fff;
+	width: 73.5119047619%;
+	margin-left: 4.464285714286%;
+}
+
+.range-control__handle {
+	position: absolute;
+	top: -9px;
+	width: 4px;
+	height: 4px;
+	background-color: #ababab;
+	border: 8px solid #fff;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.range-control__handle--max {
+	background-color: #1c4f80;
+	left: 253px;
+}
+
+
+.form-choise__btn {
+	display: block;
+	margin: auto;
+	margin-top: 30px;
+
+	width: 134px;
+	border: 2px solid #fff;
+	padding: 7px 0;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 3px;
+
 }
 
 /**
@@ -644,6 +779,7 @@
 	float: right;
 	width: 110px;
 	font-size: 23px;
+	font-family: "Symbols-sedona";
 	line-height: 23px;
 	text-align: right;
 	outline: 2px solid blue;
@@ -752,6 +888,7 @@
 	vertical-align: top;
 	font-size: 19px;
 	line-height: 21px;
+	font-family: "Symbols-sedona";
 }
 
 

@@ -40,42 +40,49 @@
 					<fieldset class="form-choise__left-column">
 						<legend>Инфраструктура:</legend>
 						<div class="checkbox">
+							<input id="pool" type="checkbox" name="infrastructure" value="" checked>
 							<label class="checkbox__label" for="pool">Бассейн</label>
-							<input id="pool" type="checkbox" name="infrastructure" value="" checked></div>
+						</div>
 						<div class="checkbox">
+							<input id="parking" type="checkbox" name="infrastructure" value="">
 							<label class="checkbox__label" for="parking">Парковка</label>
-							<input id="parking" type="checkbox" name="infrastructure" value=""></div>
+						</div>
 						<div class="checkbox">
+							<input id="wifi" type="checkbox" name="infrastructure" value="">
 							<label class="checkbox__label" for="wifi">Wi-Fi</label>
-							<input id="wifi" type="checkbox" name="infrastructure" value=""></div>
+						</div>
 					</fieldset>
 					<fieldset class="form-choise__center-column">
 						<legend>Тип жилья:</legend>
 						<div class="checkbox">
+							<input id="hotel" type="checkbox" name="housing" value="" checked>
 							<label class="checkbox__label" for="hotel">Гостиница</label>
-							<input id="hotel" type="checkbox" name="housing" value="" checked></div>
+						</div>
 						<div class="checkbox">
+							<input id="motel" type="checkbox" name="housing" value="" checked>
 							<label class="checkbox__label" for="motel">Мотель</label>
-							<input id="motel" type="checkbox" name="housing" value="" checked></div>
+						</div>
 						<div class="checkbox">
+							<input id="apartments" type="checkbox" name="housing" value="" checked>
 							<label class="checkbox__label" for="apartments">Апартаменты</label>
-							<input id="apartments" type="checkbox" name="housing" value="" checked></div>
+						</div>
 					</fieldset>
 					<fieldset class="form-choise__right-column">
 						<legend>Стоимость в сутки (Р):</legend>
 						<div class="range-filter">
-							<div class="range-filter__quantity">
-								<input id="min" name="price" value="От 0">
-								<input id="max" name="price" value="До 3000"></div>
-							<div class="filter-control  range-filter__filter-control">
-								<div class="filter-control__scale">
-									<div class="filter-control__bar"></div>
-									<div class="filter-control__handle  range-filter__handle-min"></div>
-									<div class="filter-control__handle  range-filter__handle-max"></div>
+							<div class="range-filter__price">
+								<input class="range-filter__text-field" id="min" name="min-price" value="От 0">
+								<input class="range-filter__text-field" id="max" name="max-price" value="До 3000">
+							</div>
+							<div class="range-control  range-filter__range-control">
+								<div class="range-control__scale">
+									<div class="range-control__bar"></div>
+									<div class="range-control__handle"></div>
+									<div class="range-control__handle  range-control__handle--max"></div>
 								</div>
 							</div>
 						</div>
-						<a class="form-choise__btn" href="#"></a>
+						<a class="form-choise__btn" href="#">Показать</a>
 					</fieldset>
 
 				</form>
