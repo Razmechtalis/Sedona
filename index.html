@@ -21,17 +21,17 @@
 				<nav class="main-menu">
 					<ul class="main-menu__list">
 						<li>
-							<a class="main-menu__link-active" href="#">Информация</a>
+							<a class="main-menu__link  main-menu__link--active" href="#">Информация</a>
 						</li>
 						<li>
-							<a href="#">Фото и видео</a>
+							<a class="main-menu__link" href="#">Фото и видео</a>
 						</li>
 						<li></li>
 						<li>
-							<a href="#">Карта штата</a>
+							<a class="main-menu__link" href="#">Карта штата</a>
 						</li>
 						<li>
-							<a href="#">Гостиницы</a>
+							<a class="main-menu__link" href="#">Гостиницы</a>
 						</li>
 					</ul>
 				</nav>
@@ -125,12 +125,12 @@
 				<form class="form-search" action="#">
 					<div class="form-search__row">
 						<label class="form-search__label" for="entrance">Дата заезда:</label>
-						<input id="entrance" type="date" name="date" tabindex="1" placeholder="24 Апреля 2014">
+						<input class="form-search__data-field" id="entrance" type="date" name="date" tabindex="1" placeholder="24 Апреля 2014">
 						<button class="form-search__calendar"><i class="icon-font--calendar"></i></button>
 					</div>
 					<div class="form-search__row">
 						<label class="form-search__label" for="departure">Дата выезда:</label>
-						<input id="departure" type="date" name="date" tabindex="2" placeholder="4 июля 2014">
+						<input class="form-search__data-field" id="departure" type="date" name="date" tabindex="2" placeholder="4 июля 2014">
 						<button class="form-search__calendar"><i class="icon-font--calendar"></i></button>
 						</div>
 					<div class="counter  form-search__counter">
@@ -167,9 +167,9 @@
 					</div>
 					<div class="copyright  footer-page__column">
 						Website by
-						<a class="copyright__icon  copyright__icon-author" href="#"></a>
+						<a class="copyright__icon  copyright__icon--author" href="#"></a>
 						for
-						<a class="copyright__icon  copyright__icon-academy" href="#"></a>
+						<a class="copyright__icon  copyright__icon--academy" href="#"></a>
 					</div>
 
 				</footer>
