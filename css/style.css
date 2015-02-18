@@ -608,7 +608,7 @@
 .hotels-filter {
 	padding-top: 25px;
 	padding-right: 6.666666666667%; /* 80px (от 1200px) */
-	padding-bottom: 30px;
+	padding-bottom: 31px;
 	padding-left: 5.833333333333%; /* 70px (от 1200px) */
 
 	background: transparent url("../img/bg-sedona--inner.jpg") no-repeat;
@@ -633,6 +633,7 @@
 .form-choise__center-column,
 .form-choise__right-column {
 	display: inline-block;
+	padding-top: 10px;
 
 	border: none;
 
@@ -641,28 +642,29 @@
 	vertical-align: top;
 }
 
-.form-choise__left-column,
+.form-choise__left-column {
+	width: 24.28571428571%; /* от ширины form-choise */
+}
+
+
 .form-choise__right-column {
-	width: 32%; /* от ширины form-choise */
+	width: 30.28571428571%; /* от ширины form-choise */
 }
 
 .form-choise__center-column {
-	width: 36%; /* от ширины form-choise */
+	width: 45.42857142858%;
 }
 
 .form-choise legend {
-	margin-bottom: 22px;
 
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 21px;
 }
 
-.form-choise__right-column legend {
-	margin-bottom: 10px;
-}
 
 .form-choise .checkbox {
+	margin-top: 17px;
 	margin-bottom: 20px;
 }
 
@@ -703,6 +705,10 @@ input[type="checkbox"]:checked+.checkbox__label:before {
 	content: "\2611";
 }
 
+.form-choise .range-filter {
+	margin-top: 2px;
+}
+
 .range-filter__price {
 	position: relative;
 
@@ -712,21 +718,6 @@ input[type="checkbox"]:checked+.checkbox__label:before {
 	border-radius: 3px;
 
 	font-size: 0;
-}
-
-.range-filter__price:after {
-	content: "";
-
-	position: absolute;
-	top: 0;
-	top: 5px;
-	left: 50%;
-
-	width: 2px;
-	height: 22px;
-	margin-left: -1px;
-
-	background-color: #fff;
 }
 
 .range-filter__text-field {
@@ -747,6 +738,22 @@ input[type="checkbox"]:checked+.checkbox__label:before {
 	text-transform: uppercase;
 }
 
+.range-filter__price:after {
+	content: "";
+
+	position: absolute;
+	top: 0;
+	top: 5px;
+	left: 50%;
+
+	width: 2px;
+	height: 22px;
+	margin-left: -1px;
+
+	background-color: #fff;
+}
+
+
 .range-control {
 	padding-top: 20px;
 }
@@ -760,7 +767,7 @@ input[type="checkbox"]:checked+.checkbox__label:before {
 }
 
 .range-control__bar {
-	width: 73.5119047619%;
+	width: 77.35849056604%; /*  от ширины range-cotrol__scale */
 	height: 2px;
 	margin-left: 4.464285714286%;
 
@@ -770,6 +777,7 @@ input[type="checkbox"]:checked+.checkbox__label:before {
 .range-control__handle {
 	position: absolute;
 	top: -9px;
+	left: 0;
 
 	width: 4px;
 	height: 4px;
@@ -782,7 +790,7 @@ input[type="checkbox"]:checked+.checkbox__label:before {
 }
 
 .range-control__handle--max {
-	left: 253px;
+	left: 79.55974842767%; /* от ширины range-control__scale */
 
 	background-color: #1c4f80;
 }
@@ -792,8 +800,8 @@ input[type="checkbox"]:checked+.checkbox__label:before {
 
 	width: 134px;
 	margin: auto;
-	margin-top: 30px;
-	padding: 7px 0;
+	margin-top: 32px;
+	padding: 6px 0;
 	border: 2px solid #fff;
 
 	color: #fff;
@@ -810,7 +818,7 @@ input[type="checkbox"]:checked+.checkbox__label:before {
 /* Ширина контента 1050px */
 
 .filter {
-	padding: 29px 0;
+	padding: 30px 0;
 	padding-right: 6.666666666667%; /* 80px (от 1200px)*/
 	padding-left: 5.833333333333%; /* 70px (от 1200px) */
 }
@@ -873,6 +881,7 @@ input[type="checkbox"]:checked+.checkbox__label:before {
 
 .filter__switch {
 	float: right;
+	padding-top: 3px;
 }
 
 .switch__btn {
@@ -905,12 +914,19 @@ input[type="checkbox"]:checked+.checkbox__label:before {
 /* Ширина контента 1050px */
 
 .result-request {
-	padding-top: 28px;
+	padding-top: 30px;
 	padding-right: 6.666666666667%; /* 80px (от 1200px)*/
-	padding-bottom: 30px;
+	padding-bottom: 26px;
 	padding-left: 5.833333333333%; /* 70px (от 1200px) */
-
 	line-height: 21px;
+}
+
+.result-request__row {
+	margin-bottom: 55px;
+}
+
+.result-request__row:last-of-type {
+	margin-bottom: 0;
 }
 
 .result-request__img {
@@ -922,25 +938,26 @@ input[type="checkbox"]:checked+.checkbox__label:before {
 
 .result-request__description {
 	float: left;
-
 	width: 55.04761904762%; /* от 1050px */
 }
 
 .result-request__name {
 	margin: 0;
-	margin-bottom: 10px;
+	margin-bottom: 3px;
 
 	font-size: 21px;
 	line-height: 26px;
 }
 
 .result-request__text {
-	margin-bottom: 10px;
-}
-.result-request__text span {
-	margin-right: 35px;
-
+	margin-bottom: 11px;
 	color: #333;
+}
+
+.result-request__text span {
+	display: inline-block;
+	vertical-align: top;
+	width: 110px;
 }
 
 .result-request__buttons {
@@ -1006,16 +1023,18 @@ input[type="checkbox"]:checked+.checkbox__label:before {
 
 .rating__mark {
 	width: 110px;
-	margin-top: 41px;
+	margin-top: 42px;
 	margin-left: auto;
-	padding: 3px 0;
+	padding: 4px 0;
+	text-align: center;
 
 	color: #666;
 	background-color: #f2f2f2;
 }
 
 .rating-value .icon-font--star {
-	margin-right: -8px;
+	margin-left: -3px;
+	margin-right: -6px;
 }
 
 .icon-font--star {
