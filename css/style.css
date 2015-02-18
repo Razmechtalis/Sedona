@@ -95,7 +95,7 @@
 
 .page {
 	color: #000;
-	background-color: #fff;
+	background-color: #f2f2f2;
 
 	font-family: "PT Sans", sans-serif;
 	font-size: 14px;
@@ -107,6 +107,8 @@
 	min-width: 768px;
 	max-width: 1200px;
 	margin: auto;
+	background-color: #fff;
+	box-shadow: 0 0 15px 5px rgba(0,1,1, .2);
 }
 
 .clearfix:after {
