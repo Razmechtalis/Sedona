@@ -13,7 +13,7 @@
 
 			<header class="header-page">
 
-				<figure class="logo  header-page__logo">
+				<figure class="logo">
 					<a href="index.html">
 						<img src="img/logo.png" height="70" width="138" alt="Лого"></a>
 				</figure>
@@ -39,7 +39,7 @@
 			</header>
 
 			<div class="welcome-title">
-				<img src="img/welcome.png" height="352" width="458" alt="Welcome to the gorgeous Sedona">
+				<img class="welcome-title__img" src="img/welcome.png" height="352" width="458" alt="Welcome to the gorgeous Sedona">
 			</div>
 
 			<section class="introduction">
@@ -116,7 +116,8 @@
 				<h2 class="search__title">Заинтересовались?</h2>
 				<p>
 					Укажите предполагаемые даты поездки<br>
-					и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне</p>
+					и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;Седоне
+				</p>
 				<a class="search__btn" href="#">Поиск гостиницы в Седоне</a>
 			</section>
 
@@ -133,17 +134,17 @@
 						<input class="form-search__data-field" id="departure" type="date" name="date" tabindex="2" placeholder="4 июля 2014">
 						<button class="form-search__calendar"><i class="icon-font--calendar"></i></button>
 						</div>
-					<div class="counter  form-search__counter">
+					<div class="counter">
 						<label class="form-search__label" class="counter__label" for="adults">Взрослые:</label>
-						<button class="counter__less" value=""><i class="icon-font--minus"></i></button>
-						<input id="adults" name="number" placeholder="2" tabindex="3">
-						<button class="counter__more" value=""><i class="icon-font--plus"></i></button>
+						<button class="counter__btn" value=""><i class="icon-font--minus"></i></button>
+						<input class="counter__field" id="adults" name="number" placeholder="2" tabindex="3">
+						<button class="counter__btn" value=""><i class="icon-font--plus"></i></button>
 					</div>
-					<div class="counter  form-search__counter">
+					<div class="counter">
 						<label class="form-search__label" class="counter__label" for="children">Дети:</label>
-						<button class="counter__less" value=""><i class="icon-font--minus"></i></button>
-						<input id="children" name="number" placeholder="0" tabindex="4">
-						<button class="counter__more" value=""><i class="icon-font--plus"></i></button>
+						<button class="counter__btn" value=""><i class="icon-font--minus"></i></button>
+						<input class="counter__field" id="children" name="number" placeholder="0" tabindex="4">
+						<button class="counter__btn" value=""><i class="icon-font--plus"></i></button>
 					</div>
 					<button class="form-search__btn" type="submit">Найти</button>
 				</form>
@@ -161,7 +162,7 @@
 						<a class="share__icon" href="#">
 							<i class="icon-font  icon-font--facebook"></i>
 						</a>
-						<a class="share__icon  share__icon--youtube" href="#">
+						<a class="share__icon" href="#">
 							<i class="icon-font  icon-font--youtube"></i>
 						</a>
 					</div>

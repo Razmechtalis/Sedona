@@ -107,6 +107,7 @@
 	min-width: 768px;
 	max-width: 1200px;
 	margin: auto;
+
 	background-color: #fff;
 	box-shadow: 0 0 15px 5px rgba(0,1,1, .2);
 }
@@ -115,19 +116,18 @@
 	content: "";
 	display: table;
 	clear: both;
-
 }
 
 /**
 * @Header
 */
 
-.logo {
+.header-page .logo {
 	position: absolute;
 	top: 0;
 	left: 50%;
 
-	margin-left: -5.75%; /* ( от 1200px) */
+	margin-left: -5.75%; /* от ширины header-page */
 }
 
 
@@ -199,7 +199,7 @@
 	background-size: 100% 57px, cover;
 }
 
-.welcome-title img {
+.welcome-title__img {
 	display: block;
 
 	margin: auto;
@@ -239,7 +239,6 @@
 
 .features-row {
 	font-size: 0;
-
 }
 
 .features-row__text,
@@ -300,11 +299,11 @@
 }
 
 
-.features p {
+.features-row p {
 	margin-top: 21px;
 }
 
-.features img {
+.features-row img {
 	display: block;
 
 	width: 100%;
@@ -427,8 +426,9 @@
 	top: 0;
 	left: 50%;
 
-	margin-left: -283.5px;
 	/*display: none;*/
+	margin-left: -283.5px;
+
 }
 
 .form-search {
@@ -472,9 +472,10 @@
 	background-color: #ebebeb;
 }
 .form-search__data-field:active {
-	background-color: #fff;
 	width: 295px;
 	border: 2px solid #e5e5e5;
+
+	background-color: #fff;
 }
 
 
@@ -501,11 +502,11 @@
 }
 
 
-.form-search__counter {
+.form-search .counter {
 	margin-bottom: 30px;
 }
 
-.counter input {
+.counter__field {
 	width: 38px;
 	height: 38px;
 	padding: 0;
@@ -518,8 +519,7 @@
 	text-align: center;
 }
 
-.counter__less,
-.counter__more {
+.counter__btn {
 	width: 38px;
 	height: 38px;
 	margin-right: -.26em; /* Убрал отступы у инлайн-блоков */
@@ -532,13 +532,11 @@
 	font-family: "Symbols-sedona";
 }
 
-.counter__less:hover,
-.counter__more:hover {
+.counter__btn:hover {
 	color: #000;
 }
 
-.counter__less:active,
-.counter__more:active{
+.counter__btn:active {
 	color: #81b3d2;
 }
 
@@ -565,8 +563,8 @@
 }
 
 .form-search__btn:active {
+	color: rgba(255,255,255, .3);
 	background-color: #5496bd;
-	color: rgba(255,255,255, 0.3);
 }
 
 /**
@@ -585,6 +583,7 @@
 	display: inline-block;
 
 	width: 33.3%;
+
 	text-align: center;
 	vertical-align: middle;
 }
@@ -628,11 +627,11 @@
 }
 
 .share__icon:active {
-	background-color: #5496bd;
 	color: rgba(255,255,255, .3);
+	background-color: #5496bd;
 }
 
-.share__icon--youtube {
+.share__icon .icon-font--youtube {
 	font-size: 23px;
 	line-height: 23px;
 }
@@ -668,7 +667,7 @@
 }
 
 .copyright__icon--author:hover {
-	background-position:0 -331px;
+	background-position: 0 -433px;
 }
 
 .copyright__icon--academy {
@@ -679,7 +678,7 @@
 }
 
 .copyright__icon--academy:hover {
-	background-position:0 -331px;
+	background-position: 0 -330px;
 }
 
 /**
@@ -714,8 +713,8 @@
 .form-choise__center-column,
 .form-choise__right-column {
 	display: inline-block;
-	padding-top: 10px;
 
+	padding-top: 10px;
 	border: none;
 
 	font-size: 14px;
@@ -736,8 +735,7 @@
 	width: 45.42857142858%;
 }
 
-.form-choise legend {
-
+.form-choise__legend {
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 19px;
@@ -761,24 +759,26 @@
 	display: inline-block;
 
 	color: #fff;
+
 	font-family: "PT Sans", sans-serif;
 
 	cursor: pointer;
 	vertical-align: top;
 }
 
-.checkbox__tick-box+.checkbox__label:before {
+.checkbox__tick-box + .checkbox__label:before {
 	content: "\2610";
 
 	display: inline-block;
-	width: 20px;
 
+	width: 20px;
 	margin-right: 19px;
+
+	color: #b5b5b5;
 
 	font-family: "Symbols-sedona";
 	font-size: 26px;
 	line-height: 26px;
-	color: #b5b5b5;
 
 	vertical-align: top;
 }
@@ -787,14 +787,15 @@
 	color: #fefefe;
 }
 
-.checkbox__tick-box+.checkbox__label:disabled:before {
+.checkbox__tick-box + .checkbox__label:disabled:before {
 	color: #6a6a6a;
 }
 
-.checkbox__tick-box:checked+.checkbox__label:before {
+.checkbox__tick-box:checked + .checkbox__label:before {
+	content: "\2611";
+
 	font-size: 26px;
 	line-height: 26px;
-	content: "\2611";
 }
 
 .form-choise .range-filter {
@@ -928,10 +929,13 @@
 	line-height: 26px;
 }
 
-.filter-nav {
+.filter .filter-nav {
 	float: left;
 
 	width: 59.33333333333%;  /* 623px (от 1050px)  */
+}
+
+.filter-nav {
 	padding: 0;
 
 	font-size: 0;
@@ -959,38 +963,43 @@
 .filter-nav__link {
 	display: block;
 
-	color: #000;
+	border-bottom: 1px dotted #81b3d2;
+
 	opacity: .3;
+	color: #000;
 
 	text-decoration: none;
-	border-bottom: 1px dotted #81b3d2;
 }
 
 .filter-nav__link:hover {
-	color: #81b3d2;
 	opacity: 1;
+	color: #81b3d2;
 }
 
 .filter-nav__link:active {
-	color: #000;
 	opacity: 1;
+	color: #000;
 }
 
 .filter-nav__link--active {
-	color: #81b3d2;
-	opacity: 1;
 	border-bottom: none;
+
+	opacity: 1;
+	color: #81b3d2;
+}
+
+
+
+.filter .switch {
+	float: right;
+
+	padding-top: 3px;
 }
 
 .switch {
 	width: 110px;
 
 	text-align: right;
-}
-
-.filter__switch {
-	float: right;
-	padding-top: 3px;
 }
 
 .switch__btn-arrow {
@@ -1018,11 +1027,11 @@
 	color: #81b3d2;
 }
 
+/* Уменьшил отступы между иконками */
 
-.switch__btn-arrow--down {
+.switch .icon-font--down-dir {
 	margin-right: -10px;
 	margin-left: -13px;
-
 }
 
 /**
@@ -1030,15 +1039,16 @@
 */
 
 .result-request {
-	line-height: 21px;
 	border-top: 1px solid #e5e5e5;
+
+	line-height: 21px;
 }
 
 .result-request__row {
 	margin-top: 29px;
 	margin-bottom: 28px;
-	padding-bottom: 25px;
 	padding-right: 6.666666666667%; /* (от ширины result-request) */
+	padding-bottom: 25px;
 	padding-left: 5.833333333333%; /* (от ширины result-request) */
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -1056,6 +1066,7 @@
 
 .result-request__description {
 	float: left;
+
 	width: 55.04761904762%; /* от 1050px */
 }
 
@@ -1078,13 +1089,16 @@
 
 .result-request__text {
 	margin-bottom: 15px;
+
 	color: #333;
 }
 
 .result-request__text span {
 	display: inline-block;
-	vertical-align: top;
+
 	width: 110px;
+
+	vertical-align: top;
 }
 
 .result-request__buttons {
@@ -1112,8 +1126,8 @@
 }
 
 .btn:active {
-	background-color: #5496bd;
 	color: rgba(255,255,255, .3);
+	background-color: #5496bd;
 }
 
 
@@ -1128,8 +1142,8 @@
 }
 
 .btn--booking:active {
-	background-color: #503e33;
 	color: rgba(255,255,255, .3);
+	background-color: #503e33;
 }
 
 .result-request__buttons .btn {
@@ -1172,15 +1186,16 @@
 	margin-top: 42px;
 	margin-left: auto;
 	padding: 4px 0;
-	text-align: center;
 
 	color: #666;
 	background-color: #f2f2f2;
+
+	text-align: center;
 }
 
 .rating-value .icon-font--star {
-	margin-left: -3px;
 	margin-right: -6px;
+	margin-left: -3px;
 }
 
 .icon-font--star {

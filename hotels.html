@@ -38,7 +38,7 @@
 
 				<form class="form-choise" action="#">
 					<fieldset class="form-choise__left-column">
-						<legend>Инфраструктура:</legend>
+						<legend class="form-choise__legend">Инфраструктура:</legend>
 						<div class="checkbox">
 							<input class="checkbox__tick-box" id="pool" type="checkbox" name="infrastructure" value="" checked>
 							<label class="checkbox__label" for="pool">Бассейн</label>
@@ -53,7 +53,7 @@
 						</div>
 					</fieldset>
 					<fieldset class="form-choise__center-column">
-						<legend>Тип жилья:</legend>
+						<legend class="form-choise__legend">Тип жилья:</legend>
 						<div class="checkbox">
 							<input class="checkbox__tick-box" id="hotel" type="checkbox" name="housing" value="" checked>
 							<label class="checkbox__label" for="hotel">Гостиница</label>
@@ -68,7 +68,7 @@
 						</div>
 					</fieldset>
 					<fieldset class="form-choise__right-column">
-						<legend>Стоимость в сутки (Р):</legend>
+						<legend class="form-choise__legend">Стоимость в сутки (Р):</legend>
 						<div class="range-filter">
 							<div class="range-filter__price">
 								<input class="range-filter__text-field" id="min" name="min-price" value="От 0">
@@ -105,9 +105,9 @@
 					</li>
 				</ul>
 
-				<div class="switch filter__switch">
-					<button class="switch__btn-arrow  switch__btn-arrow--up"><i class="icon-font--up-dir"></i></button>
-					<button class="switch__btn-arrow  switch__btn-arrow--down  switch__btn-arrow--active"><i class="icon-font--down-dir"></i></button>
+				<div class="switch">
+					<button class="switch__btn-arrow"><i class="icon-font--up-dir"></i></button>
+					<button class="switch__btn-arrow  switch__btn-arrow--active"><i class="icon-font--down-dir"></i></button>
 				</div>
 
 			</section>
@@ -115,8 +115,8 @@
 			<div class="result-request">
 				<div class="result-request__row  clearfix">
 					<div class="result-request__img">
-						<img src="img/pict-hotel.jpg" height="90" width="135" alt="Гостиница"></div>
-
+						<img src="img/pict-hotel.jpg" height="90" width="135" alt="Гостиница">
+					</div>
 					<div class="result-request__description">
 						<h2 class="result-request__name">Amara Resort & Spa</h2>
 						<div class="result-request__text">
