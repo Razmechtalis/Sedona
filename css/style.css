@@ -153,7 +153,7 @@
 .main-menu a {
 	display: block;
 
-	padding: 16px 0 18px;
+	padding: 12px 0 18px;
 
 	color: #000;
 
@@ -170,7 +170,7 @@
 
 .welcome-title {
 	min-height: 435px;
-	padding-top: 80px;
+	padding-top: 75px;
 
 	background: url("../img/shape.png") no-repeat bottom,
 	url("../img/bg-sedona.jpg") no-repeat;
@@ -184,7 +184,7 @@
 }
 
 .page .welcome-title {
-	margin-bottom: 60px;
+	margin-bottom: 58px;
 }
 
 /**
@@ -206,7 +206,7 @@
 }
 
 .introduction__title {
-	margin-bottom: 30px;
+	margin-bottom: 28px;
 
 	font-size: 21px;
 }
@@ -265,7 +265,7 @@
 	width: 160px;
 	margin: auto;
 	margin-top: 18.47826086957%; /* от 276px */
-	margin-bottom: 11px;
+	margin-bottom: 12px;
 
 	font-size: 21px;
 	font-weight: bold;
@@ -273,11 +273,12 @@
 }
 
 .features-row--pict h3 {
-	margin-top: 26px;
+	margin-top: 27px;
 }
 
+
 .features p {
-	margin-top: 20px;
+	margin-top: 21px;
 }
 
 .features img {
@@ -317,6 +318,10 @@
 	height: 76px;
 
 	background-position: -16px -92px;
+}
+
+.icon--souvenir + h3 {
+	margin-top: 23px;
 }
 
 /**
