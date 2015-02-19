@@ -108,7 +108,6 @@
 	max-width: 1200px;
 	margin: auto;
 
-	background-color: #fff;
 	box-shadow: 0 0 15px 5px rgba(0,1,1, .2);
 }
 
@@ -155,7 +154,7 @@
 .main-menu__link {
 	display: block;
 
-	padding: 12px 0 18px;
+	padding: 14px 0 16px;
 
 	color: #000;
 
@@ -252,9 +251,9 @@
 }
 
 .features-row__text {
-	width: 24%; /* от 1200px */
+	width: 23.6%;
 	height: 256px;
-	padding: 0 5%; /* от 1200px */
+	padding: 0 5.2%;
 
 	text-align: center;
 }
@@ -271,9 +270,9 @@
 .features-row--pict .features-row__text {
 	position: relative;
 
-	width: 22.3%; /* 268px+132px(paddings)=400px */
+	width: 22.5%;
 	height: 330px;
-	padding: 0 5.5%; /* 66px */
+	padding: 0 5.4%;
 }
 
 .features-row--color .features-row__text {
@@ -286,8 +285,8 @@
 .features-row h3 {
 	width: 160px;
 	margin: auto;
-	margin-top: 18.47826086957%; /* от 276px */
-	margin-bottom: 12px;
+	margin-top: 18.47826086957%;
+	margin-bottom: 10px;
 
 	font-size: 21px;
 	font-weight: bold;
@@ -296,6 +295,10 @@
 
 .features-row--pict h3 {
 	margin-top: 27px;
+}
+
+.features-row--color h3 {
+	margin-top: 45px;
 }
 
 
@@ -425,10 +428,9 @@
 	position: absolute;
 	top: 0;
 	left: 50%;
-
 	/*display: none;*/
-	margin-left: -283.5px;
 
+	margin-left: -283.5px;
 }
 
 .form-search {
@@ -437,6 +439,7 @@
 
 	background-color: #fff;
 
+	font-size: 0;
 	font-weight: bold;
 	line-height: 26px;
 }
@@ -452,7 +455,8 @@
 .form-search__label {
 	display: inline-block;
 
-	width: 113px;
+	width: 100px;
+	margin-right: 13px;
 
 	font-size: 14px;
 }
@@ -462,6 +466,7 @@
 	padding: 9.5px 32px 9.5px 13px;
 	border: none;
 
+	outline: none;
 	background-color: #f2f2f2;
 
 	font-family: "PT Sans", sans-serif;
@@ -481,15 +486,17 @@
 
 .form-search__calendar {
 	position: absolute;
-	top: 5px;
-	right: 0;
+	top: 7px;
+	right: 6px;
 
+	padding: 0;
 	border: none;
 
 	color: #c2c2c2;
+	outline: none;
 	background-color: transparent;
 
-	font-family: "Symbols-sedona";
+	font-family: "symbols-sedona";
 	font-size: 21px;
 }
 
@@ -503,7 +510,24 @@
 
 
 .form-search .counter {
-	margin-bottom: 30px;
+	display: inline-block;
+
+	margin-bottom: 26px;
+}
+
+
+
+.counter__label {
+	display: inline-block;
+
+	width: 86px;
+	margin-right: 27px;
+
+	font-size: 14px;
+}
+
+.counter:last-of-type .counter__label {
+	text-align: right;
 }
 
 .counter__field {
@@ -512,9 +536,11 @@
 	padding: 0;
 	border: none;
 
+	outline: none;
 	background-color: #f2f2f2;
 
 	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
 
 	text-align: center;
 }
@@ -522,14 +548,15 @@
 .counter__btn {
 	width: 38px;
 	height: 38px;
-	margin-right: -.26em; /* Убрал отступы у инлайн-блоков */
-	margin-left: -.24em; /* Убрал отступы у инлайн-блоков */
+	padding: 0;
 	border: none;
 
 	color: #a9a9a9;
+	outline: none;
 	background-color: #f2f2f2;
 
-	font-family: "Symbols-sedona";
+	font-family: "symbols-sedona";
+	font-size: 14px;
 }
 
 .counter__btn:hover {
@@ -608,18 +635,22 @@
 
 	width: 46px;
 	height: 20px;
-	margin-right: 7px;
+	margin-right: 6px;
 	padding: 14px 0;
 
 	color: #fff;
 	background-color: #81b3d2;
 
-	font-family: "Symbols-sedona";
+	font-family: "symbols-sedona";
 	font-size: 19px;
 	line-height: 20px;
 
 	text-align: center;
 	vertical-align: top;
+}
+
+.share__icon:first-of-type {
+	margin-left: 6px;
 }
 
 .share__icon:hover {
@@ -650,6 +681,7 @@
 .copyright__icon {
 	display: inline-block;
 
+	margin-right: 7px;
 	margin-left: 8px;
 
 	vertical-align: top;
@@ -760,8 +792,6 @@
 
 	color: #fff;
 
-	font-family: "PT Sans", sans-serif;
-
 	cursor: pointer;
 	vertical-align: top;
 }
@@ -772,11 +802,11 @@
 	display: inline-block;
 
 	width: 20px;
-	margin-right: 19px;
+	margin-right: 21px;
 
 	color: #b5b5b5;
 
-	font-family: "Symbols-sedona";
+	font-family: "symbols-sedona";
 	font-size: 26px;
 	line-height: 26px;
 
@@ -793,9 +823,6 @@
 
 .checkbox__tick-box:checked + .checkbox__label:before {
 	content: "\2611";
-
-	font-size: 26px;
-	line-height: 26px;
 }
 
 .form-choise .range-filter {
@@ -1003,16 +1030,19 @@
 }
 
 .switch__btn-arrow {
+	margin-right: -12px;
 	padding: 0;
 	border: none;
 
 	color: #ccc;
+	outline: none;
 	background-color: transparent;
 
-	font-family: "Symbols-sedona";
+	font-family: "symbols-sedona";
 	font-size: 23px;
 	line-height: 23px;
 }
+
 
 .switch__btn-arrow:hover {
 	color: #000;
@@ -1025,13 +1055,6 @@
 .switch__btn-arrow--active,
 .switch__btn-arrow--active:hover {
 	color: #81b3d2;
-}
-
-/* Уменьшил отступы между иконками */
-
-.switch .icon-font--down-dir {
-	margin-right: -10px;
-	margin-left: -13px;
 }
 
 /**
@@ -1174,7 +1197,7 @@
 .rating-value__item {
 	display: inline-block;
 
-	font-family: "Symbols-sedona";
+	font-family: "symbols-sedona";
 	font-size: 19px;
 	line-height: 21px;
 

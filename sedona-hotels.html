@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Sedona-hotels</title>
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic,latin" >
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css"></head>
+
+	<body class="page">
+
+		<div class="wrapper">
+			<header class="header-page">
+				<figure class="logo  header-page__logo">
+					<a href="index.html">
+						<img src="img/logo.png" height="70" width="138" alt="Лого"></a>
+				</figure>
+				<nav class="main-menu">
+					<ul class="main-menu__list">
+						<li>
+							<a class="main-menu__link" href="index.html">Информация</a>
+						</li>
+						<li>
+							<a class="main-menu__link" href="#">Фото и видео</a>
+						</li>
+						<li></li>
+						<li>
+							<a class="main-menu__link" href="#">Карта штата</a>
+						</li>
+						<li>
+							<a class="main-menu__link  main-menu__link--active" href="#">Гостиницы</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<div class="hotels-filter">
+
+				<form class="form-choise" action="#">
+					<fieldset class="form-choise__left-column">
+						<legend class="form-choise__legend">Инфраструктура:</legend>
+						<div class="checkbox">
+							<input class="checkbox__tick-box" id="pool" type="checkbox" name="infrastructure" value="" checked>
+							<label class="checkbox__label" for="pool">Бассейн</label>
+						</div>
+						<div class="checkbox">
+							<input class="checkbox__tick-box" id="parking" type="checkbox" name="infrastructure" value="">
+							<label class="checkbox__label" for="parking">Парковка</label>
+						</div>
+						<div class="checkbox">
+							<input class="checkbox__tick-box" id="wifi" type="checkbox" name="infrastructure" value="">
+							<label class="checkbox__label" for="wifi">Wi-Fi</label>
+						</div>
+					</fieldset>
+					<fieldset class="form-choise__center-column">
+						<legend class="form-choise__legend">Тип жилья:</legend>
+						<div class="checkbox">
+							<input class="checkbox__tick-box" id="hotel" type="checkbox" name="housing" value="" checked>
+							<label class="checkbox__label" for="hotel">Гостиница</label>
+						</div>
+						<div class="checkbox">
+							<input class="checkbox__tick-box" id="motel" type="checkbox" name="housing" value="" checked>
+							<label class="checkbox__label" for="motel">Мотель</label>
+						</div>
+						<div class="checkbox">
+							<input class="checkbox__tick-box" id="apartments" type="checkbox" name="housing" value="" checked>
+							<label class="checkbox__label" for="apartments">Апартаменты</label>
+						</div>
+					</fieldset>
+					<fieldset class="form-choise__right-column">
+						<legend class="form-choise__legend">Стоимость в сутки (Р):</legend>
+						<div class="range-filter">
+							<div class="range-filter__price">
+								<input class="range-filter__text-field" id="min" name="min-price" value="От 0">
+								<input class="range-filter__text-field" id="max" name="max-price" value="До 3000">
+							</div>
+							<div class="range-control">
+								<div class="range-control__scale">
+									<div class="range-control__bar"></div>
+									<div class="range-control__handle  range-control__handle--min"></div>
+									<div class="range-control__handle  range-control__handle--max"></div>
+								</div>
+							</div>
+						</div>
+						<a class="form-choise__btn" href="#">Показать</a>
+					</fieldset>
+
+				</form>
+
+			</div>
+
+			<section class="filter  clearfix">
+
+				<h2 class="filter__title">Найдено: 3</h2>
+				<ul class="filter-nav">
+					<li class="filter-nav__item  filter-nav__item--title">Сортировка:</li>
+					<li class="filter-nav__item">
+						<a class="filter-nav__link  filter-nav__link--active" href="#">По цене</a>
+					</li>
+					<li class="filter-nav__item">
+						<a class="filter-nav__link" href="#">По типу</a>
+					</li>
+					<li class="filter-nav__item">
+						<a class="filter-nav__link" href="#">По рейтингу</a>
+					</li>
+				</ul>
+
+				<div class="switch">
+					<button class="switch__btn-arrow"><i class="icon-font--up-dir"></i></button>
+					<button class="switch__btn-arrow  switch__btn-arrow--active"><i class="icon-font--down-dir"></i></button>
+				</div>
+
+			</section>
+
+			<div class="result-request">
+				<div class="result-request__row  clearfix">
+					<div class="result-request__img">
+						<img src="img/pict-hotel.jpg" height="90" width="135" alt="Гостиница">
+					</div>
+					<div class="result-request__description">
+						<h2 class="result-request__name">Amara Resort & Spa</h2>
+						<div class="result-request__text">
+							<span>Гостиница</span>
+							<span>От 3500 р.</span>
+						</div>
+						<div class="result-request__buttons">
+							<a class="btn" href="#">Подробнее</a>
+							<a class="btn  btn--booking" href="#">Забронировать</a>
+						</div>
+					</div>
+					<div class="rating  result-request__rating">
+						<ul class="rating-value">
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+						</ul>
+						<div class="rating__mark">Рейтинг: 8,5</div>
+					</div>
+				</div>
+
+				<div class="result-request__row  clearfix">
+					<div class="result-request__img">
+						<img src="img/pict-motel.jpg" height="90" width="135" alt="Мотель"></div>
+					<div class="result-request__description">
+						<h2 class="result-request__name">Desert Quail Inn</h2>
+						<div class="result-request__text">
+							<span>Мотель</span>
+							<span>От 2000 р.</span>
+						</div>
+						<div class="result-request__buttons">
+							<a class="btn" href="#">Подробнее</a>
+							<a class="btn  btn--booking" href="#">Забронировать</a>
+						</div>
+					</div>
+
+					<div class="rating  result-request__rating">
+						<ul class="rating-value">
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+						</ul>
+						<div class="rating__mark">Рейтинг: 8,9</div>
+					</div>
+				</div>
+
+				<div class="result-request__row  clearfix">
+					<div class="result-request__img">
+						<img src="img/pict-apartments.jpg" height="90" width="135" alt="Апартаменты"></div>
+					<div class="result-request__description">
+						<h2 class="result-request__name">Villas at Poco Diablo</h2>
+						<div class="result-request__text">
+							<span>Апартаменты</span>
+							<span>От 4000 р.</span>
+						</div>
+						<div class="result-request__buttons">
+							<a class="btn" href="#">Подробнее</a>
+							<a class="btn  btn--booking" href="#">Забронировать</a>
+						</div>
+					</div>
+
+					<div class="rating  result-request__rating">
+						<ul class="rating-value">
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+							<li class="rating-value__item"><i class="icon-font--star"></i></li>
+						</ul>
+						<div class="rating__mark">Рейтинг: 9,2</div>
+					</div>
+
+				</div>
+			</div>
+
+			<footer class="footer-page">
+
+				<div class="footer-page__column">
+					<a class="footer-page__hashtag" href="#">#Visitsedona</a>
+				</div>
+
+					<div class="share  footer-page__column">
+						<a class="share__icon" href="#">
+							<i class="icon-font  icon-font--twitter"></i>
+						</a>
+						<a class="share__icon" href="#">
+							<i class="icon-font  icon-font--facebook"></i>
+						</a>
+						<a class="share__icon  share__icon--youtube" href="#">
+							<i class="icon-font  icon-font--youtube"></i>
+						</a>
+					</div>
+
+					<div class="copyright  footer-page__column">
+						Website by
+						<a class="copyright__icon  copyright__icon--author" href="#"></a>
+						for
+						<a class="copyright__icon  copyright__icon--academy" href="#"></a>
+					</div>
+
+			</footer>
+
+		</div>
+
+	</body>
+
+</html>
