@@ -95,7 +95,7 @@
 
 .page {
 	color: #000;
-	background-color: #f2f2f2;
+	background-color: #fff;
 
 	font-family: "PT Sans", sans-serif;
 	font-size: 14px;
@@ -121,12 +121,16 @@
 * @Header
 */
 
+.header-page {
+	position: relative;
+}
+
 .header-page .logo {
 	position: absolute;
 	top: 0;
 	left: 50%;
 
-	margin-left: -5.75%; /* от ширины header-page */
+	margin-left: -69px; /* от ширины header-page */
 }
 
 
@@ -139,7 +143,7 @@
 	list-style: none;
 }
 
-.main-menu li {
+.main-menu__item {
 	display: inline-block;
 
 	width: 20%;
@@ -282,7 +286,7 @@
 	background-color: #eee;
 }
 
-.features-row h3 {
+.features-row .features-row__title {
 	width: 160px;
 	margin: auto;
 	margin-top: 18.47826086957%;
@@ -293,11 +297,11 @@
 	line-height: 26px;
 }
 
-.features-row--pict h3 {
+.features-row--pict .features-row__title {
 	margin-top: 27px;
 }
 
-.features-row--color h3 {
+.features-row--color .features-row__title {
 	margin-top: 45px;
 }
 
@@ -345,7 +349,7 @@
 	background-position: 0 -182px;
 }
 
-.icon--souvenir + h3 {
+.icon--souvenir + .features-row__title {
 	margin-top: 21px;
 }
 
@@ -372,7 +376,7 @@
 	line-height: 30px;
 }
 
-.search p {
+.search__text {
 	margin-top: 29px;
 	margin-bottom: 45px;
 
@@ -413,7 +417,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	z-index: -10;
+	z-index: 10;
 
 	min-height: 593px;
 
@@ -428,6 +432,7 @@
 	position: absolute;
 	top: 0;
 	left: 50%;
+	z-index: 20;
 	/*display: none;*/
 
 	margin-left: -283.5px;
@@ -574,6 +579,7 @@
 	border: none;
 
 	color: #fff;
+	outline: none;
 	background-color: #81b3d2;
 
 	font-family: "PT Sans", sans-serif;
@@ -599,6 +605,9 @@
 */
 
 .footer-page {
+	position: relative;
+	z-index: 20;
+
 	padding: 36px 0;
 
 	background-color: rgba(255,255,255, .8);
@@ -621,6 +630,8 @@
 	font-size: 21px;
 	font-weight: bold;
 	line-height: 26px;
+
+	text-decoration: none;
 }
 
 /**
@@ -933,6 +944,11 @@
 	text-decoration: none;
 }
 
+.form-choise__btn:hover {
+	color: #fff;
+	background-color: #855c56;
+}
+
 /**
 * @Filter
 */
@@ -1119,7 +1135,7 @@
 .result-request__text span {
 	display: inline-block;
 
-	width: 110px;
+	min-width: 110px;
 
 	vertical-align: top;
 }
@@ -1152,7 +1168,6 @@
 	color: rgba(255,255,255, .3);
 	background-color: #5496bd;
 }
-
 
 .btn--booking {
 	width: 110px;
