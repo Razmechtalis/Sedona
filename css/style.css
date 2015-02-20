@@ -1,7 +1,6 @@
 /**
 * Подключение иконочных шрифтов
 */
-
 @font-face {
 	font-family: "symbols-sedona";
 	font-weight: normal;
@@ -433,12 +432,13 @@
 	top: 0;
 	left: 50%;
 	z-index: 20;
-	/*display: none;*/
 
 	margin-left: -283.5px;
 }
 
 .form-search {
+	display: none;
+
 	width: 457px;
 	padding: 55px;
 
@@ -447,6 +447,10 @@
 	font-size: 0;
 	font-weight: bold;
 	line-height: 26px;
+}
+
+.js-form-search {
+	display: block;
 }
 
 .form-search__row {
@@ -1132,7 +1136,7 @@
 	color: #333;
 }
 
-.result-request__text span {
+.result-request__item-text{
 	display: inline-block;
 
 	min-width: 110px;
