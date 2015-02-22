@@ -1,6 +1,5 @@
-/**
-* Подключение иконочных шрифтов
-*/
+/* Подключение иконочных шрифтов */
+
 @font-face {
 	font-family: "symbols-sedona";
 	font-weight: normal;
@@ -88,9 +87,7 @@
 } /* "" */
 
 
-/**
-* Styles
-*/
+/* Styles */
 
 .page {
 	color: #000;
@@ -449,7 +446,7 @@
 	line-height: 26px;
 }
 
-.js-form-search {
+.form-search.is-visible {
 	display: block;
 }
 
@@ -935,7 +932,7 @@
 .form-choise__btn {
 	display: block;
 
-	width: 134px;
+	width: 138px;
 	margin: auto;
 	margin-top: 32px;
 	padding: 6px 0;
@@ -943,9 +940,15 @@
 
 	color: #fff;
 	border-radius: 3px;
+	background-color: transparent;
+	outline: none;
+
+	font-family: "PT Sans", sans-serif;
+	font-size: 14px;
 
 	text-align: center;
 	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .form-choise__btn:hover {
@@ -1035,7 +1038,9 @@
 	color: #81b3d2;
 }
 
-
+.filter-nav__link--active:active {
+	color: #81b3d2;
+}
 
 .filter .switch {
 	float: right;
@@ -1136,7 +1141,7 @@
 	color: #333;
 }
 
-.result-request__item-text{
+.result-request__item-text {
 	display: inline-block;
 
 	min-width: 110px;

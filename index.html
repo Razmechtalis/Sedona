@@ -6,13 +6,10 @@
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,latin" >
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css"></head>
-
 	<body class="page">
-
+		<!-- BEGIN wrapper -->
 		<div class="wrapper">
-
 			<header class="header-page">
-
 				<figure class="logo">
 					<a href="index.html">
 						<img src="img/logo.png" height="70" width="138" alt="Лого"></a>
@@ -34,13 +31,10 @@
 						</li>
 					</ul>
 				</nav>
-
 			</header>
-
 			<div class="welcome-title">
 				<img class="welcome-title__img" src="img/text-welcome.png" height="352" width="458" alt="Welcome to the gorgeous Sedona">
 			</div>
-
 			<section class="introduction">
 				<h1 class="introduction__title">
 					Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!
@@ -49,7 +43,6 @@
 					Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче чем Гранд Каньон!
 				</p>
 			</section>
-
 			<div class="features-row">
 				<div class="features-row__text  features-row__text--color">
 					<h3 class="features-row__title">Настоящий городок</h3>
@@ -67,7 +60,6 @@
 				</div>
 				<div class="features-row__text">
 					<div class="icon icon--hamburger"></div>
-
 					<h3 class="features-row__title">Еда</h3>
 					<p>Всегда заказывай фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
 				</div>
@@ -110,7 +102,6 @@
 					<p>Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
 				</div>
 			</div>
-
 			<section class="search">
 				<h2 class="search__title">Заинтересовались?</h2>
 				<p class="search__text">
@@ -119,18 +110,18 @@
 				</p>
 				<a class="search__btn" href="#">Поиск гостиницы в Седоне</a>
 			</section>
-
+		<!-- BEGIN map -->
 			<div class="map">
-				<div class="map__container"></div>
+				<div class="map__container" id="map-canvas"></div>
 				<form class="form-search" action="/echo">
 					<div class="form-search__row">
 						<label class="form-search__label" for="entrance">Дата заезда:</label>
-						<input class="form-search__data-field" id="entrance" type="date" name="date" tabindex="1" placeholder="24 Апреля 2014">
+						<input class="form-search__data-field" id="entrance" type="date" name="date-entrance" tabindex="1" placeholder="24 Апреля 2014" required>
 						<button class="form-search__calendar"><i class="icon-font--calendar"></i></button>
 					</div>
 					<div class="form-search__row">
 						<label class="form-search__label" for="departure">Дата выезда:</label>
-						<input class="form-search__data-field" id="departure" type="date" name="date" tabindex="2" placeholder="4 июля 2014">
+						<input class="form-search__data-field" id="departure" type="date" name="date-departure" tabindex="2" placeholder="4 июля 2014">
 						<button class="form-search__calendar"><i class="icon-font--calendar"></i></button>
 						</div>
 					<div class="counter">
@@ -147,13 +138,10 @@
 					</div>
 					<button class="form-search__btn" type="submit">Найти</button>
 				</form>
-
 				<footer class="footer-page">
-
 					<div class="footer-page__column">
 						<a class="footer-page__hashtag" href="#">#Visitsedona</a>
 					</div>
-
 					<div class="share  footer-page__column">
 						<a class="share__icon" href="#">
 							<i class="icon-font  icon-font--twitter"></i>
@@ -171,13 +159,12 @@
 						for
 						<a class="copyright__icon  copyright__icon--academy" href="#"></a>
 					</div>
-
 				</footer>
-
 			</div>
-
+		<!-- END map -->
 		</div>
+		<!-- END wrapper -->
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
 		<script src="js/scripts.js"></script>
 	</body>
-
 </html>
