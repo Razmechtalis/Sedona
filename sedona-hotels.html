@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Sedona-hotels</title>
+		<title>Отели Седоны</title>
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,latin" >
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css"></head>
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
 	<body class="page">
-				<script src="js/scripts.js"></script>
-
+		<!-- BEGIN wrapper -->
 		<div class="wrapper">
 			<header class="header-page">
 				<figure class="logo  header-page__logo">
@@ -33,9 +33,9 @@
 					</ul>
 				</nav>
 			</header>
-
+			<!-- BEGIN hotels-filter -->
 			<div class="hotels-filter">
-
+				<!-- BEGIN form-choise -->
 				<form class="form-choise" action="/echo">
 					<fieldset class="form-choise__left-column">
 						<legend class="form-choise__legend">Инфраструктура:</legend>
@@ -82,15 +82,13 @@
 								</div>
 							</div>
 						</div>
-						<button class="form-choise__btn" href="#">Показать</button>
+						<button class="form-choise__btn">Показать</button>
 					</fieldset>
-
 				</form>
-
+			<!-- END form-choise -->
 			</div>
-
+			<!-- END hotels-filter -->
 			<section class="filter  clearfix">
-
 				<h2 class="filter__title">Найдено: 3</h2>
 				<ul class="filter-nav">
 					<li class="filter-nav__item  filter-nav__item--title">Сортировка:</li>
@@ -104,14 +102,12 @@
 						<a class="filter-nav__link" href="#">По рейтингу</a>
 					</li>
 				</ul>
-
 				<div class="switch">
 					<button class="switch__btn-arrow"><i class="icon-font--up-dir"></i></button>
 					<button class="switch__btn-arrow  switch__btn-arrow--active"><i class="icon-font--down-dir"></i></button>
 				</div>
-
 			</section>
-
+			<!-- BEGIN result-request -->
 			<div class="result-request">
 				<div class="result-request__row  clearfix">
 					<div class="result-request__img">
@@ -162,7 +158,6 @@
 						<div class="rating__mark">Рейтинг: 8,9</div>
 					</div>
 				</div>
-
 				<div class="result-request__row  clearfix">
 					<div class="result-request__img">
 						<img src="img/pict-apartments.jpg" height="90" width="135" alt="Апартаменты"></div>
@@ -177,7 +172,6 @@
 							<a class="btn  btn--booking" href="#">Забронировать</a>
 						</div>
 					</div>
-
 					<div class="rating  result-request__rating">
 						<ul class="rating-value">
 							<li class="rating-value__item"><i class="icon-font--star"></i></li>
@@ -186,16 +180,13 @@
 						</ul>
 						<div class="rating__mark">Рейтинг: 9,2</div>
 					</div>
-
 				</div>
 			</div>
-
+			<!-- END result-request -->
 			<footer class="footer-page">
-
 				<div class="footer-page__column">
 					<a class="footer-page__hashtag" href="#">#Visitsedona</a>
 				</div>
-
 					<div class="share  footer-page__column">
 						<a class="share__icon" href="#">
 							<i class="icon-font  icon-font--twitter"></i>
@@ -207,17 +198,15 @@
 							<i class="icon-font  icon-font--youtube"></i>
 						</a>
 					</div>
-
 					<div class="copyright  footer-page__column">
 						Website by
 						<a class="copyright__icon  copyright__icon--author" href="#"></a>
 						for
 						<a class="copyright__icon  copyright__icon--academy" href="#"></a>
 					</div>
-
 			</footer>
-
 		</div>
+		<!-- END wrapper -->
+		<script src="js/scripts.js"></script>
 	</body>
-
 </html>

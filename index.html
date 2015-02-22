@@ -2,10 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Sedona</title>
+		<title>Седона</title>
 		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,latin" >
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css"></head>
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+	</head>
 	<body class="page">
 		<!-- BEGIN wrapper -->
 		<div class="wrapper">
@@ -32,9 +33,10 @@
 					</ul>
 				</nav>
 			</header>
+			<!-- BEGIN welcome-title -->
 			<div class="welcome-title">
-				<img class="welcome-title__img" src="img/text-welcome.png" height="352" width="458" alt="Welcome to the gorgeous Sedona">
-			</div>
+				<img class="welcome-title__img" src="img/text-welcome.png" height="352" width="458" alt="Welcome to the gorgeous Sedona"></div>
+			<!-- END welcome-title -->
 			<section class="introduction">
 				<h1 class="introduction__title">
 					Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!
@@ -56,18 +58,23 @@
 				<div class="features-row__text">
 					<div class="icon icon--house"></div>
 					<h3 class="features-row__title">Жилье</h3>
-					<p>Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
+					<p>
+						Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!
+					</p>
 				</div>
 				<div class="features-row__text">
 					<div class="icon icon--hamburger"></div>
 					<h3 class="features-row__title">Еда</h3>
-					<p>Всегда заказывай фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+					<p>
+						Всегда заказывай фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!
+					</p>
 				</div>
 				<div class="features-row__text">
 					<div class="icon icon--souvenir"></div>
 					<h3 class="features-row__title">Сувениры</h3>
-					<p>Не&nbsp;только китайского,<br>
-					но&nbsp;и&nbsp;местного производства!</p>
+					<p>
+						Не&nbsp;только китайского,<br>
+						но&nbsp;и&nbsp;местного производства!</p>
 				</div>
 			</div>
 			<div class="features-row">
@@ -75,11 +82,12 @@
 					<img src="img/pict-bridge.jpg" height="256" width="800" alt="Мост дьявола"></div>
 				<div class="features-row__text  features-row__text--color">
 					<h3 class="features-row__title">
-						Там есть
-						<br>мост дьявола
+						Там есть<br>
+						мост дьявола
 					</h3>
 					<div>&mdash; №2 &mdash;</div>
-					<p>Да, по&nbsp;нему можно пройти!<br>
+					<p>
+						Да, по&nbsp;нему можно пройти!<br>
 						Если конечно вы&nbsp;осмелитесь</p>
 				</div>
 			</div>
@@ -88,13 +96,15 @@
 					<h3 class="features-row__title">Небольшая площадь</h3>
 					<div>&mdash; №3 &mdash;</div>
 					<p>
-						Все достопримеча-
-						<br>тельности находятся очень близко</p>
+						Все достопримеча-<br>
+						тельности находятся очень близко</p>
 				</div>
 				<div class="features-row__text">
 					<h3 class="features-row__title">Красивая дорога</h3>
 					<div>&mdash; №4 &mdash;</div>
-					<p>Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!</p>
+					<p>
+						Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!
+					</p>
 				</div>
 				<div class="features-row__text">
 					<h3 class="features-row__title">Мало туристов</h3>
@@ -110,31 +120,41 @@
 				</p>
 				<a class="search__btn" href="#">Поиск гостиницы в Седоне</a>
 			</section>
-		<!-- BEGIN map -->
+			<!-- BEGIN map -->
 			<div class="map">
 				<div class="map__container" id="map-canvas"></div>
 				<form class="form-search" action="/echo">
 					<div class="form-search__row">
 						<label class="form-search__label" for="entrance">Дата заезда:</label>
 						<input class="form-search__data-field" id="entrance" type="date" name="date-entrance" tabindex="1" placeholder="24 Апреля 2014" required>
-						<button class="form-search__calendar"><i class="icon-font--calendar"></i></button>
+						<button class="form-search__calendar"> <i class="icon-font--calendar"></i>
+						</button>
 					</div>
 					<div class="form-search__row">
 						<label class="form-search__label" for="departure">Дата выезда:</label>
 						<input class="form-search__data-field" id="departure" type="date" name="date-departure" tabindex="2" placeholder="4 июля 2014">
-						<button class="form-search__calendar"><i class="icon-font--calendar"></i></button>
-						</div>
+						<button class="form-search__calendar"> <i class="icon-font--calendar"></i>
+						</button>
+					</div>
 					<div class="counter">
 						<label class="counter__label" for="adults">Взрослые:</label>
-						<button class="counter__btn" value=""><i class="icon-font--minus"></i></button>
+						<button class="counter__btn" value="">
+							<i class="icon-font--minus"></i>
+						</button>
 						<input class="counter__field" id="adults" name="number" placeholder="2" tabindex="3">
-						<button class="counter__btn" value=""><i class="icon-font--plus"></i></button>
+						<button class="counter__btn" value="">
+							<i class="icon-font--plus"></i>
+						</button>
 					</div>
 					<div class="counter">
 						<label class="counter__label" for="children">Дети:</label>
-						<button class="counter__btn" value=""><i class="icon-font--minus"></i></button>
+						<button class="counter__btn" value="">
+							<i class="icon-font--minus"></i>
+						</button>
 						<input class="counter__field" id="children" name="number" placeholder="0" tabindex="4">
-						<button class="counter__btn" value=""><i class="icon-font--plus"></i></button>
+						<button class="counter__btn" value="">
+							<i class="icon-font--plus"></i>
+						</button>
 					</div>
 					<button class="form-search__btn" type="submit">Найти</button>
 				</form>
@@ -161,10 +181,10 @@
 					</div>
 				</footer>
 			</div>
-		<!-- END map -->
+			<!-- END map -->
 		</div>
 		<!-- END wrapper -->
 		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-		<script src="js/scripts.js"></script>
+		<script src="js/scripts.min.js"></script>
 	</body>
 </html>

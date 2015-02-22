@@ -1,9 +1,15 @@
 var button_search = document.querySelector(".search__btn");
 var popup = document.querySelector(".form-search");
+var hashtag = document.querySelector(".footer-page__hashtag");
 
 button_search.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup.classList.add("is-visible");
+});
+
+hashtag.addEventListener("click", function(event) {
+	event.preventDefault();
+	console.log("Привет");
 });
 
 window.addEventListener("keydown", function(event) {

@@ -358,7 +358,7 @@
 }
 
 .search {
-	width: 568px; /* 568px+150px(paddings)=640px */
+	width: 568px;
 	padding: 0 35px;
 	padding-top: 53px;
 
@@ -940,8 +940,8 @@
 
 	color: #fff;
 	border-radius: 3px;
-	background-color: transparent;
 	outline: none;
+	background-color: transparent;
 
 	font-family: "PT Sans", sans-serif;
 	font-size: 14px;
@@ -1115,7 +1115,7 @@
 .result-request__description {
 	float: left;
 
-	width: 55.04761904762%; /* от 1050px */
+	width: 55.04761904762%;
 }
 
 .result-request__name {
