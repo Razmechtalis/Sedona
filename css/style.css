@@ -195,7 +195,7 @@
 	padding-top: 75px;
 
 	background: url("../img/shape.png") no-repeat bottom,
-	url("../img/bg-sedona.jpg") no-repeat;
+	#7193b8 url("../img/bg-sedona.jpg") no-repeat;
 	background-size: 100% 57px, cover;
 }
 
@@ -418,7 +418,7 @@
 
 	min-height: 593px;
 
-	background: url("../img/map.jpg") no-repeat;
+	background: #f3f1ed url("../img/map.jpg") no-repeat;
 }
 
 /**
@@ -736,7 +736,7 @@
 	padding-bottom: 28px;
 	padding-left: 5.833333333333%; /* 70px (от 1200px) */
 
-	background: transparent url("../img/bg-sedona--inner.jpg") no-repeat;
+	background: #7193b8 url("../img/bg-sedona--inner.jpg") no-repeat;
 	background-size: 100%, cover;
 
 	line-height: 21px;
